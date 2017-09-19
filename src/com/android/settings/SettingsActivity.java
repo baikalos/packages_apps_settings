@@ -54,6 +54,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toolbar;
 
+import ru.baikalos.gear.util.BaikalOSUtils;
+
 import com.android.internal.util.ArrayUtils;
 import com.android.settings.Settings.WifiSettingsActivity;
 import com.android.settings.applications.manageapplications.ManageApplications;
@@ -710,6 +712,11 @@ public class SettingsActivity extends SettingsDrawerActivity
         somethingChanged = setTileEnabled(changedList, new ComponentName(packageName,
                         Settings.WifiDisplaySettingsActivity.class.getName()),
                 WifiDisplaySettings.isAvailable(this), isAdmin)
+                || somethingChanged;
+
+        boolean baikalosExtrasSupported = BaikalOSUtils.isPackageEnabled("ru.baikalos.extras", pm);
+        somethingChanged = setTileEnabled(changedList, new ComponentName(packageName,
+                Settings.StartBeActivity.class.getName()), baikalosExtrasSupported, isAdmin)
                 || somethingChanged;
 
         // Enable/disable the Me Card page.

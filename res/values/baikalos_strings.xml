@@ -20,5 +20,6 @@
 
     <string name="baikalos_version_title">BaikalOS Pie PowerSave</string>
     <string name="baikalos_version_summary">BaikalOS PowerSave - 9.0</string>
-
+    <string name="baikalosextras_title">BaikalOS Extras</string>
+    <string name="baikalosextras_summary">ROM customization</string>
 </resources>
