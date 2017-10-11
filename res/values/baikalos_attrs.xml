@@ -13,6 +13,7 @@
 -->
 <resources>
 
-    <color name="homepage_baikalosextras_background">#ffab00</color>
+    <attr name="customPreferenceStyle" format="reference" />
 
 </resources>
+

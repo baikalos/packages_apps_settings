@@ -11,8 +11,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
+<!-- This file only contains custom attribute and style definition for preferences -->
+<!-- Things unrelated to preference framework UI customization should go to other styles files -->
 <resources>
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
+        <item name="customPreferenceStyle">@style/CustomPreference</item>
+    </style>
 
-    <color name="homepage_baikalosextras_background">#ffab00</color>
-
+    <style name="CustomPreference" parent="Preference.SettingsBase">
+        <item name="allowDividerAbove">false</item>
+    </style>
 </resources>
