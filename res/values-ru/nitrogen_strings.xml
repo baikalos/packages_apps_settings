@@ -151,4 +151,7 @@
     <string name="app_ops_start_foreground">запуск на перед. плане</string>
     <string name="app_ops_bluetooth_scan">сканирование BT</string>
     <string name="app_ops_boot_completed">автозагрузка</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Связать громкости звонка и уведомлений</string>
 </resources>
