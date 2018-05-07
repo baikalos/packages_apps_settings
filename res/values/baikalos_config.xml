@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 BaikalOS
+     Copyright (C) 2016 The CyanogenMod Project
+     Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,10 +16,7 @@
      limitations under the License.
 -->
 
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="baikal_version_title">BaikalOS</string>
-    <string name="baikal_version_summary">BaikalOS 10.0</string>
-    <string name="baikalextras_title">Baikal Extras</string>
-    <string name="baikalextras_summary">Настройка прошивки</string>
+    <!-- Whether to add AGPS parameter settings -->
+    <bool name="config_agps_enabled">true</bool>
 </resources>
