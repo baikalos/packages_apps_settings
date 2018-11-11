@@ -29,13 +29,13 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.SwitchPreference;
 import android.text.TextUtils;
+import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 
-import lineageos.providers.LineageSettings;
 
 public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceController
         implements PreferenceControllerMixin {
@@ -80,8 +80,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
             if (((SwitchPreference) mPreference).isChecked()) {
                 WirelessAdbWarningDialog.show(mFragment);
             } else {
-                LineageSettings.Secure.putInt(mContext.getContentResolver(),
-                       LineageSettings.Secure.ADB_PORT, -1);
+                Settings.Secure.putInt(mContext.getContentResolver(),
+                       Settings.Secure.ADB_PORT, -1);
                 updatePreference();
             }
             return true;
@@ -97,8 +97,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
     }
 
     public void onWirelessAdbDialogConfirmed() {
-        LineageSettings.Secure.putInt(mContext.getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, 5555);
+        Settings.Secure.putInt(mContext.getContentResolver(),
+                Settings.Secure.ADB_PORT, 5555);
         updatePreference();
     }
 
@@ -107,8 +107,8 @@ public class WirelessAdbPreferenceController extends DeveloperOptionsPreferenceC
     }
 
     private void updatePreference() {
-        int port = LineageSettings.Secure.getInt(mContext.getContentResolver(),
-                LineageSettings.Secure.ADB_PORT, -1);
+        int port = Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.ADB_PORT, -1);
         boolean enabled = port > 0;
         WifiInfo wifiInfo = mWifiManager.getConnectionInfo();
 
