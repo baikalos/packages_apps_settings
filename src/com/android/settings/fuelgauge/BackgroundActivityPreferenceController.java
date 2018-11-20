@@ -78,12 +78,12 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
         final int mode = mAppOpsManager
                 .checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage);
         final boolean whitelisted = mPowerWhitelistBackend.isWhitelisted(mTargetPackage);
-        if (whitelisted || mode == AppOpsManager.MODE_ERRORED
-                || Utils.isProfileOrDeviceOwner(mUserManager, mDpm, mTargetPackage)) {
-            preference.setEnabled(false);
-        } else {
+        //if (whitelisted || mode == AppOpsManager.MODE_ERRORED
+        //        || Utils.isProfileOrDeviceOwner(mUserManager, mDpm, mTargetPackage)) {
+        //    preference.setEnabled(false);
+        //} else {
             preference.setEnabled(true);
-        }
+        //}
         updateSummary(preference);
     }
 
@@ -110,10 +110,10 @@ public class BackgroundActivityPreferenceController extends AbstractPreferenceCo
     }
 
     public void updateSummary(Preference preference) {
-        if (mPowerWhitelistBackend.isWhitelisted(mTargetPackage)) {
+        /*if (mPowerWhitelistBackend.isWhitelisted(mTargetPackage)) {
             preference.setSummary(R.string.background_activity_summary_whitelisted);
             return;
-        }
+        }*/
         final int mode = mAppOpsManager
                 .checkOpNoThrow(AppOpsManager.OP_RUN_ANY_IN_BACKGROUND, mUid, mTargetPackage);
 
