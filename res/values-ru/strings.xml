@@ -2394,6 +2394,8 @@
     <string name="battery_saver_turn_on_automatically_pct" msgid="8665950426992057191">"при <xliff:g id="PERCENT">%1$s</xliff:g> заряда"</string>
     <string name="battery_percentage" msgid="723291197508049369">"Уровень заряда батареи"</string>
     <string name="battery_percentage_description" msgid="8511658577507384014">"Показывать уровень заряда батареи в строке состояния"</string>
+    <string name="battery_icon" msgid="723291197512319369">"Значок батареи"</string>
+    <string name="battery_icon_description" msgid="8511123123507384014">"Показывать значок батареи в строке состояния"</string>
     <string name="process_stats_summary_title" msgid="1144688045609771677">"Статистика процессов"</string>
     <string name="process_stats_summary" msgid="109387941605607762">"Статистика запущенных процессов"</string>
     <string name="app_memory_use" msgid="7849258480392171939">"Использование памяти"</string>

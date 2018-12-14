@@ -5421,6 +5421,11 @@
     <!-- [CHAR_LIMIT=NONE] Battery percentage: Description for preference -->
     <string name="battery_percentage_description">Show battery percentage in status bar</string>
 
+    <!-- [CHAR_LIMIT=40] Battery percentage: Title -->
+    <string name="battery_icon">Battery icon</string>
+    <!-- [CHAR_LIMIT=NONE] Battery percentage: Description for preference -->
+    <string name="battery_icon_description">Show battery icon in status bar</string>
+
     <!-- Process Stats strings -->
     <skip />
 
