@@ -52,7 +52,7 @@ public class BatteryIconPreferenceController extends AbstractPreferenceControlle
     @Override
     public void updateState(Preference preference) {
         int setting = Settings.System.getInt(mContext.getContentResolver(),
-                OMNI_SHOW_BATTERY_IMAGE, 0);
+                OMNI_SHOW_BATTERY_IMAGE, 1);
 
         ((SwitchPreference) preference).setChecked(setting == 1);
     }
