@@ -16,37 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
-    <string name="rom_version_title">GZOSP version</string>
     <!-- MSIM Manual provisioning -->
-    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
-    <string name="sim_enabled">включена</string>
-    <string name="sim_disabled">выключена</string>
-    <string name="sim_missing">отсутствует или неисправна</string>
-    <string name="sim_enabler_need_disable_sim">СИМ будет деактивирована. Продолжить?</string>
-    <string name="sim_enabler_will_disable_sim_title">Внимание</string>
-    <string name="sim_enabler_need_switch_data_service">Эта СИМ карта будет деактивирована и СИМ <xliff:g id="slotid">%1$s</xliff:g> будет использована для мобильных данных. Продолжить?</string>
-    <string name="sim_enabler_airplane_on">Невозможно выполнить операцию в режиме самолета.</string>
-    <string name="sim_enabler_in_call">Невозможно выполнить операцию в режиме разговора.</string>
-    <string name="sim_enabler_both_inactive">Невозможно отключить все СИМ карты</string>
-    <string name="sim_enabler_enabling">Активация\u2026</string>
-    <string name="sim_enabler_disabling">Декативация\u2026</string>
-    <string name="sub_activate_success">СИМ активирована.</string>
-    <string name="sub_activate_failed">Активация неудачна.</string>
-    <string name="sub_deactivate_success">СИМ деактивирована.</string>
-    <string name="sub_deactivate_failed">Деактивация неудачна.</string>
-    <string name="available_sims_title">Доступные СИМ карты</string>
     <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
-    <string name="lockscreen_battery_info_summary">Показывать ток, напряжение и температуру батареи на экране блокировки в режиме зарядки</string>
     <!-- Facelock toggle -->
-    <string name="face_auto_unlock_title">Авторазблокировка по лицу</string>
-    <string name="face_auto_unlock_summary">Автоматически убирать экран блокировки после разблокировки по лицу</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Свайп для сриншота</string>
-    <string name="three_finger_gesture_summary">Свайп тремя пальцами для снятия скриншота</string>
     <!-- OP like Navigation Gestures -->
-    <string name="gesture_settings_title">Навигационные жесты</string>
-    <string name="gesture_settings_info">Панель навигации должна быть отключена!\n\nЖесты выполняются от нижнего края экрана вверх.\nДоступные жесты:\n\nНазад\n- Свайп вверх слева и справа\n\nДомой\n- Свайп по центру\n\nНедавние\n- Свайп по центру до центра экрана и удержание\n\nДлинное нажатие Домой\n- Короткий свайп по центру и удержание</string>
-    <string name="use_bottom_gesture_title">Navigation gestures</string>
-    <string name="use_bottom_gesture_summary">Использовать жесты от нижнего края для навигации</string>
 </resources>
