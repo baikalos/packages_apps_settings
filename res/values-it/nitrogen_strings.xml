@@ -13,15 +13,81 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Nitrogen Settings -->
+    <string name="nitrogen_settings_title">Personalizzazione</string>
+    <string name="nitrogen_settings_summary">Impostazioni aggiuntive</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Disposizione casuale</string>
+    <string name="unlock_scramble_pin_layout_summary">Cambia la disposizione grafica dei numeri PIN per lo sblocco del dispositivo</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando sono inseriti PIN o password corretti</string>
     <!-- Custom light color -->
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Vibrazione di ricarica</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suono Cattura Schermo</string>
     <!-- Changelog -->
+    <string name="changelog_title">Registro Modifiche</string>
+    <string name="changelog_summary">Dall\'ultimo aggiornamento</string>
+    <string name="changelog_error">Impossibile caricare il changelog</string>
+    <string name="dashboard_conditions_title">Condizioni pannello impostazioni</string>
+    <string name="summary_dashboard_conditions_enabled">Le condizioni del pannello impostazioni sono abilitate</string>
+    <string name="summary_dashboard_conditions_disabled">Le condizioni della dashboard sono disattivate</string>
+    <string name="dashboard_suggestions_title">Suggerimenti pannello impostazioni</string>
+    <string name="summary_dashboard_suggestions_enabled">Suggerimenti abilitati nel pannello impostazioni</string>
+    <string name="summary_dashboard_suggestions_disabled">Suggerimenti pannello impostazioni disabilitati</string>
+    <string name="app_package_name_title">Pachetto</string>
+    <string name="app_version_title">Versione</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_summary">Trova nuovi aggiornamenti</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Azzera statistiche</string>
+    <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
+    <string name="ok_string">Ok</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Localizzazione</string>
+    <string name="app_ops_cat_personal">Personale</string>
+    <string name="app_ops_cat_messaging">Messaggistica</string>
+    <string name="app_ops_cat_media">Media</string>
+    <string name="app_ops_cat_device">Dispositivo</string>
+    <string name="app_ops_cat_bootup">Avvio</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">fotocamera</string>
+    <string name="app_ops_coarse_location">posizione approssimativa</string>
+    <string name="app_ops_fine_location">posizione precisa</string>
+    <string name="app_ops_gps_location">GPS</string>
+    <string name="app_ops_access_notifications">notifiche</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">avvio automatico</string>
+    <string name="app_ops_delete_call_log">eliminazione del registro chiamate</string>
+    <string name="app_ops_delete_contacts">elimina contatti</string>
+    <string name="app_ops_delete_mms">eliminazione MMS</string>
+    <string name="app_ops_delete_sms">eliminazione SMS</string>
+    <string name="app_ops_get_usage_stats">ottienere statistiche uso</string>
+    <string name="app_ops_keep_device_awake">mantieni attivo</string>
+    <string name="app_ops_assist_screenshot">Cattura screenshot</string>
+    <string name="app_ops_use_body_sensors">sensori biometrici</string>
+    <string name="app_ops_read_cell_broadcasts">trasmissioni cella</string>
+    <string name="app_ops_mock_location">posizione fittizia</string>
+    <string name="app_ops_read_external_storage">lettura memoria esterna</string>
+    <string name="app_ops_write_external_storage">scrittura sulla memoria esterna</string>
+    <string name="app_ops_turn_on_screen">accendi lo schermo</string>
+    <string name="app_ops_get_accounts">account dispositivo</string>
+    <string name="app_ops_run_in_background">esegui in background</string>
+    <string name="app_ops_accessibility_volume">volume accessibilità</string>
+    <string name="app_ops_read_phone_numbers">lettura numeri di telefono</string>
+    <string name="app_ops_request_install_packages">installazione pacchetti</string>
+    <string name="app_ops_picture_in_picture">picture-in-picture</string>
+    <string name="app_ops_app_start_foreground">esegui in primo piano</string>
+    <string name="app_ops_answer_phone_calls">rispondi alle chiamate</string>
+    <string name="app_ops_run_any_in_background">esegui in background</string>
+    <string name="app_ops_change_wifi_state">modifica lo stato Wi-Fi</string>
+    <string name="app_ops_request_delete_packages">elimina pacchetti</string>
+    <string name="app_ops_bind_accessibility_service">associa all\'accessibilità</string>
+    <string name="app_ops_accept_handover">accetta consegna</string>
+    <string name="app_ops_start_foreground">esegui in primo piano</string>
+    <string name="app_ops_bluetooth_scan">scansione bluetooth</string>
+    <string name="app_ops_boot_completed">avvio automatico</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Collega volume suoneria e notifiche</string>
 </resources>

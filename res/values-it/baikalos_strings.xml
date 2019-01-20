@@ -16,5 +16,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="baikalos_version_title">BaikalOS Pie PowerSave</string>
+    <string name="baikalos_version_summary">BaikalOS PowerSave - 9.0</string>
+    <string name="baikalosextras_title">BaikalOS extra</string>
+    <string name="baikalosextras_summary">Personalizzazione ROM</string>
     <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Suoneria incrementale</string>
+    <string name="increasing_ring_min_volume_title">Volume iniziale</string>
+    <string name="increasing_ring_ramp_up_time_title">Tempo di aumento</string>
 </resources>

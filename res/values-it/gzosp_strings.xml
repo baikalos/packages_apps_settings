@@ -16,9 +16,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
+    <string name="rom_version_title">GZOSP versione</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabled">abilitato</string>
+    <string name="sim_disabled">disabilitato</string>
+    <string name="sim_missing">mancante o difettoso</string>
+    <string name="sim_enabler_need_disable_sim">La scheda SIM sarà disattivata. Vuoi continuare?</string>
+    <string name="sim_enabler_will_disable_sim_title">Attenzione</string>
+    <string name="sim_enabler_need_switch_data_service">Questa SIM sarà disattivata e la SIM <xliff:g id="slotid">%1$s</xliff:g> sarà utilizzata per la connessione dati. Vuoi procedere?</string>
+    <string name="sim_enabler_airplane_on">Impossibile eseguire l\'operazione mentre è attivata la modalità aereo.</string>
+    <string name="sim_enabler_in_call">Impossibile eseguire l\'operazione durante una chiamata.</string>
+    <string name="sim_enabler_both_inactive">Non è possibile disattivare tutte le schede SIM</string>
+    <string name="sim_enabler_enabling">Attivazione\u2026</string>
+    <string name="sim_enabler_disabling">Disattivazione\u2026</string>
+    <string name="sub_activate_success">SIM attivata.</string>
+    <string name="sub_activate_failed">Attivazione non riuscita.</string>
+    <string name="sub_deactivate_success">SIM disattivata.</string>
+    <string name="sub_deactivate_failed">Disattivazione non riuscita.</string>
+    <string name="available_sims_title">Schede SIM disponibili</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informazioni di ricarica nella schermata di blocco</string>
     <!-- Facelock toggle -->
+    <string name="face_auto_unlock_title">Sblocco automatico con volto</string>
+    <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe per fare uno screenshot</string>
+    <string name="three_finger_gesture_summary">Scorri con tre dita per fare uno screenshot</string>
     <!-- OP like Navigation Gestures -->
+    <string name="use_bottom_gesture_summary">Scorri verso l\'alto dalla parte inferiore dello schermo per navigare</string>
 </resources>

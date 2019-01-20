@@ -18,15 +18,39 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Отладка по USB</string>
+    <string name="adb_enable_summary">Включить режим отладки (ADB)</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">Уведомление об отладке</string>
+    <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">Отладка по сети</string>
+    <string name="adb_over_network_summary">Включить TCP/IP отладку через сетевые интерфейсы (Wi\u2011Fi и USB-сети). Отладка отключится после перезагрузки</string>
+    <string name="adb_over_network_warning">Внимание: При включении отладки по сети, возможен неконтролируемый доступ со всех подключенных сетей к вашему устройству!\n\nИспользуйте эту функцию только при подключении к доверенным сетям.\n\nВы действительно хотите включить эту функцию?</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Осталось <xliff:g id="step_count">%1$d</xliff:g> шагов для включения настроек для разработчиков.</item>
+        <item quantity="few">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+        <item quantity="many">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+        <item quantity="other">Вы в <xliff:g id="step_count">%1$d</xliff:g> шагах от включения настроек для разработчиков.</item>
+    </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">Вы стали разработчиком!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">Нет необходимости, настройки для разработчиков уже включены.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Коснитесь для сна</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Дважды коснитесь строки состояния или экрана блокировки, чтобы перевести устройство в спящий режим</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">Имя устройства сети</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Отображать обложки мультимедиа</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Показать визуализацию музыки</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Предотвращать случайное включение</string>
+    <string name="proximity_wake_summary">Проверять датчик приближения перед включением экрана</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Пробуждение при подключении</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Включать экран при подключении или отключении зарядного устройства</string>
 </resources>
