@@ -15,13 +15,61 @@
     <!-- Nitrogen Settings -->
     <!-- Scramble PIN Layout on Lockscreen -->
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+    <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
     <!-- Custom light color -->
+    <string name="value_equals_default">por_defecto</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Vibración al cargar</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
     <!-- Changelog -->
+    <string name="changelog_title">Historial de cambios</string>
+    <string name="app_package_name_title">Paquete</string>
+    <string name="app_version_title">Versión</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_title">Actualizaciones de Nitrogen OS</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Restablecer estadísticas</string>
+    <string name="battery_stats_message">Las estadísticas del historial de la batería serán restablecidas</string>
+    <string name="ok_string">Ok</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_settings">Permisos de apps</string>
+    <string name="app_ops_cat_location">Ubicación</string>
+    <string name="app_ops_cat_personal">Personal</string>
+    <string name="app_ops_cat_messaging">Mensajes</string>
+    <string name="app_ops_cat_media">Media</string>
+    <string name="app_ops_cat_device">Dispositivo</string>
+    <string name="app_ops_cat_bootup">Arranque</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">cámara</string>
+    <string name="app_ops_gps_location">GPS</string>
+    <string name="app_ops_access_notifications">notificaciones</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">inicio automático</string>
+    <string name="app_ops_delete_call_log">borrar registro de llamadas</string>
+    <string name="app_ops_delete_contacts">borrar contactos</string>
+    <string name="app_ops_delete_mms">eliminar MMS</string>
+    <string name="app_ops_delete_sms">eliminar SMS</string>
+    <string name="app_ops_draw_on_top">mostrar sobre otras aplicaciones</string>
+    <string name="app_ops_get_usage_stats">obtener estadísticas de uso</string>
+    <string name="app_ops_keep_device_awake">mantener activo</string>
+    <string name="app_ops_play_audio">reproducir sonidos</string>
+    <string name="app_ops_post_notification">mostrar notificaciones</string>
+    <string name="app_ops_receive_sms">recibir SMS</string>
+    <string name="app_ops_record_audio">grabar audio</string>
+    <string name="app_ops_send_mms">enviar MMS</string>
+    <string name="app_ops_send_sms">enviar SMS</string>
+    <string name="app_ops_toast_window">mensajes flotantes</string>
+    <string name="app_ops_use_alarm_volume">volumen de la alarma</string>
+    <string name="app_ops_use_audio_focus">enfoque de audio</string>
+    <string name="app_ops_use_bluetooth_volume">volumen de Bluetooth</string>
+    <string name="app_ops_write_mms">escribir MMS</string>
+    <string name="app_ops_write_sms">escribir SMSe</string>
+    <string name="app_ops_use_fingerprint">huella digital</string>
+    <string name="app_ops_add_voicemail">buzón de voz</string>
+    <string name="app_ops_read_phone_state">acceder al estado del dispositivo</string>
+    <string name="app_ops_bluetooth_scan">escaneo bluetooth</string>
+    <string name="app_ops_boot_completed">arranque automático</string>
     <!-- Volume link notification -->
 </resources>

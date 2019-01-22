@@ -18,15 +18,37 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Android-Debugging</string>
+    <string name="adb_enable_summary">Aktivieren der Android Debug Bridge (ADB) Schnittstelle</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">Debugging-Benachrichtigung</string>
+    <string name="adb_notify_summary">Eine Benachrichtigung anzeigen, wenn USB- oder Netzwerkdebugging aktiviert ist</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB über Netzwerk</string>
+    <string name="adb_over_network_summary">TCP/IP-Debugging über Netzwerkschnittstellen (WLAN, USB-Netzwerke) aktivieren. Diese Einstellung wird beim Neustarten zurückgesetzt</string>
+    <string name="adb_over_network_warning">WARNUNG: Wenn ADB übers Netzwerk aktiviert ist, kann auf Ihr Gerät von jedem verbundenen Netzwerk zugegriffen werden!\n\nDiese Funktion sollte nur verwendet werden, wenn Sie sich in einem vertrauenswürdigen Netzwerk befinden.\n\nMöchten Sie diese Funktion trotzdem aktivieren?</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Sie sind noch <xliff:g id="step_count">%1$d</xliff:g> Schritt vom Aktivieren der Entwickleroptionen entfernt.</item>
+        <item quantity="other">Sie sind noch <xliff:g id="step_count">%1$d</xliff:g> Schritte vom Aktivieren der Entwickleroptionen entfernt.</item>
+    </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">Sie haben die Entwickler-Einstellungen aktiviert!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">Nicht nötig, Sie haben die Entwickler-Einstellungen bereits aktiviert.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Tippen für Standby</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippe auf Statusleiste oder Sperrbildschirm, um das Display auszuschalten</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">Hostname des Geräts</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Albumcover anzeigen</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Musikvisualisierung anzeigen</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Unbeabsichtigtes Aufwecken verhindern</string>
+    <string name="proximity_wake_summary">Vor dem Aufwecken des Gerätes Näherungssensor überprüfen</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Beim Anschließen oder Trennen einer Stromquelle das Display anschalten</string>
 </resources>

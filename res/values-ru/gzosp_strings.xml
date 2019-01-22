@@ -22,7 +22,7 @@
     <string name="sim_enabled">включена</string>
     <string name="sim_disabled">выключена</string>
     <string name="sim_missing">отсутствует или неисправна</string>
-    <string name="sim_enabler_need_disable_sim">СИМ будет деактивирована. Продолжить?</string>
+    <string name="sim_enabler_need_disable_sim">SIM-карта будет отключена. Продолжить?</string>
     <string name="sim_enabler_will_disable_sim_title">Внимание</string>
     <string name="sim_enabler_need_switch_data_service">Эта СИМ карта будет деактивирована и СИМ <xliff:g id="slotid">%1$s</xliff:g> будет использована для мобильных данных. Продолжить?</string>
     <string name="sim_enabler_airplane_on">Невозможно выполнить операцию в режиме самолета.</string>
@@ -34,7 +34,7 @@
     <string name="sub_activate_failed">Активация неудачна.</string>
     <string name="sub_deactivate_success">СИМ деактивирована.</string>
     <string name="sub_deactivate_failed">Деактивация неудачна.</string>
-    <string name="available_sims_title">Доступные СИМ карты</string>
+    <string name="available_sims_title">Доступные SIM-карты</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
     <string name="lockscreen_battery_info_summary">Показывать ток, напряжение и температуру батареи на экране блокировки в режиме зарядки</string>

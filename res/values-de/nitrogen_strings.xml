@@ -13,15 +13,82 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Nitrogen Settings -->
+    <string name="nitrogen_settings_title">Personalisierung</string>
+    <string name="nitrogen_settings_summary">Zusatzeinstellungen</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Zufällige Anordnung</string>
+    <string name="unlock_scramble_pin_layout_summary">Bei jedem Entsperrversuch das PIN-Layout zufällig neu wählen</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
+    <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, wenn PIN/Passwort korrekt eingegeben wird</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Helle Farben</string>
+    <string name="show_light_on_zen_title">Blinken während DND-Modus</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Vibration beim Laden</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot-Ton</string>
     <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Seit dem letzten Update</string>
+    <string name="changelog_error">Changelog kann nicht geladen werden</string>
+    <string name="dashboard_conditions_title">Dashboard-Bedingungen</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard-Bedingungen sind aktiviert</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard-Bedingungen sind deaktiviert</string>
+    <string name="dashboard_suggestions_title">Dashboard-Vorschläge</string>
+    <string name="summary_dashboard_suggestions_enabled">Dashboard-Vorschläge sind aktiviert</string>
+    <string name="summary_dashboard_suggestions_disabled">Dashboard-Vorschläge sind deaktiviert</string>
+    <string name="app_package_name_title">Paket</string>
+    <string name="app_version_title">Version</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_title">Nitrogen OS Updates</string>
+    <string name="nosupdate_settings_summary">Finden Sie neue Updates</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statistiken zurücksetzen</string>
+    <string name="battery_stats_message">Der Akkuverlauf wird zurückgesetzt</string>
+    <string name="ok_string">Ok</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_settings">Berechtigungen (App Ops)</string>
+    <string name="app_ops_cat_location">Standort</string>
+    <string name="app_ops_cat_personal">Privat</string>
+    <string name="app_ops_cat_messaging">SMS/MMS</string>
+    <string name="app_ops_cat_media">Medien</string>
+    <string name="app_ops_cat_device">Gerät</string>
+    <string name="app_ops_cat_bootup">Systemstart</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_coarse_location">Ungefährer Standort</string>
+    <string name="app_ops_fine_location">Genauer Standort</string>
+    <string name="app_ops_gps_location">GPS</string>
+    <string name="app_ops_access_notifications">Benachrichtigungen</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">Autostart</string>
+    <string name="app_ops_delete_call_log">Anrufliste löschen</string>
+    <string name="app_ops_delete_contacts">Kontakte löschen</string>
+    <string name="app_ops_delete_mms">MMS löschen</string>
+    <string name="app_ops_delete_sms">SMS löschen</string>
+    <string name="app_ops_draw_on_top">Über anderen Apps einblenden</string>
+    <string name="app_ops_get_usage_stats">Nutzungsstatistiken abrufen</string>
+    <string name="app_ops_keep_device_awake">Aktiv lassen</string>
+    <string name="app_ops_write_external_storage">Ext. Speicher beschreiben.</string>
+    <string name="app_ops_turn_on_screen">Bildschirm einschalten</string>
+    <string name="app_ops_get_accounts">Geräte-Konten</string>
+    <string name="app_ops_run_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_accessibility_volume">Laustärke der Bedienungshilfen</string>
+    <string name="app_ops_read_phone_numbers">Telefonnummern vorlesen.</string>
+    <string name="app_ops_request_install_packages">Pakete installieren</string>
+    <string name="app_ops_picture_in_picture">Bild in Bild</string>
+    <string name="app_ops_app_start_foreground">Im Vordergrund starten</string>
+    <string name="app_ops_answer_phone_calls">Anrufe annehmen</string>
+    <string name="app_ops_run_any_in_background">Im Hintergrund ausführen</string>
+    <string name="app_ops_change_wifi_state">WLAN-Status ändern</string>
+    <string name="app_ops_request_delete_packages">Pakete löschen</string>
+    <string name="app_ops_bind_accessibility_service">An Bedienhilfen anbinden</string>
+    <string name="app_ops_accept_handover">Übergabe akzeptieren</string>
+    <string name="app_ops_manage_ipsec_tunnels">IP-Tunnel verwalten</string>
+    <string name="app_ops_start_foreground">Im Vordergrund starten</string>
+    <string name="app_ops_bluetooth_scan">Bluetooth-Suche</string>
+    <string name="app_ops_boot_completed">Autostart</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Klingelton- &amp; Benachrichtigungslautstärke verbinden</string>
 </resources>
