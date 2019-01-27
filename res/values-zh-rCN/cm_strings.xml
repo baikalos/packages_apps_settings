@@ -18,15 +18,36 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Usb调试</string>
+    <string name="adb_enable_summary">启用 Android Debug Bridge (ADB) 界面</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">调试通知</string>
+    <string name="adb_notify_summary">已开启 USB 或网络调试通知</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">网络ADB调试</string>
+    <string name="adb_over_network_summary">启用通过 TCP/IP 网络接口 (WiFi，USB 网络) 进行调试的功能。此设置在重新启动时重置</string>
+    <string name="adb_over_network_warning">警告：当网络 ADB 调试启用时，您的设备将在所有已连接的网络上接收指令！\n\n请只在您信任的网络中启用此功能。\n\n您真的要开启这个功能吗？</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="other">还需 <xliff:g id="step_count">%1$d</xliff:g> 步就可以启用开发者选项。</item>
+    </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">您已启用开发设置 ！</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">不需要，您已启用了开发设置。</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">双击休眠</string>
+    <string name="status_bar_double_tap_to_sleep_summary">双击状态栏或锁屏以关闭屏幕</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">设备名称</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">锁屏界面显示专辑封面</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">显示音乐视觉效果</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">防止意外唤醒</string>
+    <string name="proximity_wake_summary">唤醒屏幕前检查距离传感器</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">插入/拔出电源点亮屏幕</string>
+    <string name="wake_when_plugged_or_unplugged_summary">连接或断开电源时点亮屏幕</string>
 </resources>

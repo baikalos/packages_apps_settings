@@ -13,15 +13,76 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Nitrogen Settings -->
+    <string name="nitrogen_settings_title">Personalisasi</string>
+    <string name="nitrogen_settings_summary">Pengaturan tambahan</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">Tata letak acak</string>
+    <string name="unlock_scramble_pin_layout_summary">Acak tata letak PIN saat membuka perangkat</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Membuka dengan cepat</string>
+    <string name="unlock_quick_unlock_control_summary">Membuka secara otomatis ketika PIN/kata sandi yang dimasukkan benar</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Warna terang</string>
+    <string name="custom_light_on_time_title">Durasi lampu aktif selama led berkedip (ms)</string>
+    <string name="custom_light_off_time_title">Durasi lampu nonaktif selama led berkedip (ms)\"</string>
+    <string name="value_equals_default">def</string>
+    <string name="show_light_on_zen_title">Berkedip selama mode Jangan Ganggu</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">Getaran pengisian</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Suara tangkapan layar</string>
     <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Sejak pemutahiran terakhir</string>
+    <string name="changelog_error">Tidak dapat memuat changelog</string>
+    <string name="dashboard_conditions_title">Kondisi dasbor</string>
+    <string name="summary_dashboard_conditions_enabled">Kondisi dasbor diaktifkan</string>
+    <string name="summary_dashboard_conditions_disabled">Kondisi dasbor dinonaktifkan</string>
+    <string name="dashboard_suggestions_title">Saran dasbor</string>
+    <string name="summary_dashboard_suggestions_enabled">Saran dasbor diaktifkan</string>
+    <string name="summary_dashboard_suggestions_disabled">Dasbor saran dinonaktifkan</string>
+    <string name="app_package_name_title">Paket</string>
+    <string name="app_version_title">Versi</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_title">Pemutahiran Nitrogen OS</string>
+    <string name="nosupdate_settings_summary">Temukan pembaruan terbaru</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Reset statistik</string>
+    <string name="battery_stats_message">Statistik penggunaan baterai akan direset</string>
+    <string name="ok_string">Oke</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_settings">Opsi aplikasi</string>
+    <string name="app_ops_cat_location">Lokasi</string>
+    <string name="app_ops_cat_personal">Pribadi</string>
+    <string name="app_ops_cat_messaging">Perpesanan</string>
+    <string name="app_ops_cat_media">Media</string>
+    <string name="app_ops_cat_device">Perangkat</string>
+    <string name="app_ops_cat_bootup">Bootup</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">Kamera</string>
+    <string name="app_ops_coarse_location">Lokasi sementara</string>
+    <string name="app_ops_fine_location">Lokasi baik</string>
+    <string name="app_ops_gps_location">GPS</string>
+    <string name="app_ops_access_notifications">Pemberitahuan</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">mulai otomatis</string>
+    <string name="app_ops_use_body_sensors">sensor tubuh</string>
+    <string name="app_ops_read_cell_broadcasts">siaran seluler</string>
+    <string name="app_ops_mock_location">lokasi tiruan</string>
+    <string name="app_ops_read_external_storage">Baca penyimpanan eksternal</string>
+    <string name="app_ops_write_external_storage">Tulis penyimpanan eksternal</string>
+    <string name="app_ops_turn_on_screen">Nyalakan layar</string>
+    <string name="app_ops_get_accounts">Akun perangkat</string>
+    <string name="app_ops_run_in_background">Jalankan di latar belakang</string>
+    <string name="app_ops_accessibility_volume">Aksesibilitas volume audio</string>
+    <string name="app_ops_read_phone_numbers">baca no. telepon</string>
+    <string name="app_ops_request_install_packages">pasang paket</string>
+    <string name="app_ops_picture_in_picture">pip</string>
+    <string name="app_ops_app_start_foreground">Memulai di latar depan</string>
+    <string name="app_ops_answer_phone_calls">Jawab panggilan</string>
+    <string name="app_ops_run_any_in_background">Berjalan di latar belakang</string>
+    <string name="app_ops_change_wifi_state">Ubah status WiFi</string>
+    <string name="app_ops_request_delete_packages">Menghapus paket</string>
+    <string name="app_ops_bind_accessibility_service">tautkan ke aksesibilitas</string>
     <!-- Volume link notification -->
 </resources>

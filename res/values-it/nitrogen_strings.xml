@@ -22,6 +22,11 @@
     <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando sono inseriti PIN o password corretti</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Colore led</string>
+    <string name="custom_light_on_time_title">Durata luce accesa durante l\'impulso del led (ms)</string>
+    <string name="custom_light_off_time_title">Durata luce spenta durante l\'impulso del led (ms)</string>
+    <string name="value_equals_default">predefinito</string>
+    <string name="show_light_on_zen_title">Lampeggia in modalità Non Disturbare</string>
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Vibrazione di ricarica</string>
     <!-- Screenshot sound -->
@@ -39,12 +44,14 @@
     <string name="app_package_name_title">Pachetto</string>
     <string name="app_version_title">Versione</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_title">Aggiornamenti Nitrogen OS</string>
     <string name="nosupdate_settings_summary">Trova nuovi aggiornamenti</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Azzera statistiche</string>
     <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
     <string name="ok_string">Ok</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_settings">App ops</string>
     <string name="app_ops_cat_location">Localizzazione</string>
     <string name="app_ops_cat_personal">Personale</string>
     <string name="app_ops_cat_messaging">Messaggistica</string>
@@ -63,8 +70,51 @@
     <string name="app_ops_delete_contacts">elimina contatti</string>
     <string name="app_ops_delete_mms">eliminazione MMS</string>
     <string name="app_ops_delete_sms">eliminazione SMS</string>
+    <string name="app_ops_draw_on_top">traccia in alto</string>
     <string name="app_ops_get_usage_stats">ottienere statistiche uso</string>
     <string name="app_ops_keep_device_awake">mantieni attivo</string>
+    <string name="app_ops_monitor_location">monitoraggio posizione</string>
+    <string name="app_ops_high_power_location">monitoraggio posizione ad alta precisione</string>
+    <string name="app_ops_make_phone_call">effettua una chiamata</string>
+    <string name="app_ops_modify_calendar">aggiorna il calendario</string>
+    <string name="app_ops_modify_call_log">aggiorna il registro chiamate</string>
+    <string name="app_ops_modify_clipboard">modifica appunti</string>
+    <string name="app_ops_modify_contacts">aggiorna contatti</string>
+    <string name="app_ops_modify_settings">aggiorna impostazioni</string>
+    <string name="app_ops_mute_unmute_microphone">disattiva/attiva microfono</string>
+    <string name="app_ops_play_audio">riproduzione audio</string>
+    <string name="app_ops_post_notification">posticipa notifica</string>
+    <string name="app_ops_cell_scan">scansione cella</string>
+    <string name="app_ops_project_media">controllo multimediale</string>
+    <string name="app_ops_read_calendar">leggere il calendario</string>
+    <string name="app_ops_read_call_log">lettura registro chiamate</string>
+    <string name="app_ops_read_clipboard">lettura appunti</string>
+    <string name="app_ops_read_contacts">Lettura contatti</string>
+    <string name="app_ops_read_mms">leggi MMS</string>
+    <string name="app_ops_read_sms">lettura SMS</string>
+    <string name="app_ops_receive_sms">ricezione SMS</string>
+    <string name="app_ops_record_audio">registrare audio</string>
+    <string name="app_ops_send_mms">invio MMS</string>
+    <string name="app_ops_send_sms">invio SMS</string>
+    <string name="app_ops_toast_window">messaggi toast</string>
+    <string name="app_ops_use_alarm_volume">volume sveglia</string>
+    <string name="app_ops_use_audio_focus">focus audio</string>
+    <string name="app_ops_use_bluetooth_volume">Volume Bluetooth</string>
+    <string name="app_ops_use_master_volume">volume principale</string>
+    <string name="app_ops_use_media_buttons">pulsanti multimediali</string>
+    <string name="app_ops_use_media_volume">volume multimedia</string>
+    <string name="app_ops_use_notification_volume">volume notifica</string>
+    <string name="app_ops_use_ring_volume">volume suoneria</string>
+    <string name="app_ops_use_vibrate">feedback tattile</string>
+    <string name="app_ops_use_voice_volume">volume chiamata vocale</string>
+    <string name="app_ops_write_mms">scrivi MMS</string>
+    <string name="app_ops_write_sms">scrivi SMS</string>
+    <string name="app_ops_use_fingerprint">impronta digitale</string>
+    <string name="app_ops_add_voicemail">segreteria telefonica</string>
+    <string name="app_ops_read_phone_state">accesso stato telefono</string>
+    <string name="app_ops_scan_wifi">Scansione reti WiFi</string>
+    <string name="app_ops_change_wallpaper">cambia sfondo</string>
+    <string name="app_ops_assist_structure">assisti struttura</string>
     <string name="app_ops_assist_screenshot">Cattura screenshot</string>
     <string name="app_ops_use_body_sensors">sensori biometrici</string>
     <string name="app_ops_read_cell_broadcasts">trasmissioni cella</string>
@@ -85,6 +135,7 @@
     <string name="app_ops_request_delete_packages">elimina pacchetti</string>
     <string name="app_ops_bind_accessibility_service">associa all\'accessibilità</string>
     <string name="app_ops_accept_handover">accetta consegna</string>
+    <string name="app_ops_manage_ipsec_tunnels">gestisci tunnel ip</string>
     <string name="app_ops_start_foreground">esegui in primo piano</string>
     <string name="app_ops_bluetooth_scan">scansione bluetooth</string>
     <string name="app_ops_boot_completed">avvio automatico</string>

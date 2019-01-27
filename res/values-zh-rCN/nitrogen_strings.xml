@@ -13,15 +13,132 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Nitrogen Settings -->
+    <string name="nitrogen_settings_title">个性化</string>
+    <string name="nitrogen_settings_summary">附加设置</string>
     <!-- Scramble PIN Layout on Lockscreen -->
+    <string name="unlock_scramble_pin_layout_title">打乱布局</string>
+    <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
     <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">快速解锁</string>
+    <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">指示灯颜色</string>
+    <string name="custom_light_on_time_title">屏幕开启下LED闪烁间隔时间(毫秒)</string>
+    <string name="custom_light_off_time_title">呼吸灯闪烁时熄灯时间 (毫秒)</string>
+    <string name="value_equals_default">默认</string>
+    <string name="show_light_on_zen_title">在勿扰模式时闪烁</string>
     <!-- Charging vibration -->
+    <string name="charging_vibro_title">充电时振动</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">截图提示音</string>
     <!-- Changelog -->
+    <string name="changelog_title">更新日志</string>
+    <string name="changelog_summary">自上次更新后</string>
+    <string name="changelog_error">无法加载更新日志</string>
+    <string name="dashboard_conditions_title">面板状态摘要</string>
+    <string name="summary_dashboard_conditions_enabled">面板状态摘要已启用</string>
+    <string name="summary_dashboard_conditions_disabled">面板状态摘要已停用</string>
+    <string name="dashboard_suggestions_title">面板建议</string>
+    <string name="summary_dashboard_suggestions_enabled">面板建议已启用</string>
+    <string name="summary_dashboard_suggestions_disabled">面板建议已禁用</string>
+    <string name="app_package_name_title">软件包</string>
+    <string name="app_version_title">版本</string>
     <!-- OTA -->
+    <string name="nosupdate_settings_title">Nitrogen OS更新</string>
+    <string name="nosupdate_settings_summary">查找新的更新</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">重置统计信息</string>
+    <string name="battery_stats_message">电池的历史数据将被重置</string>
+    <string name="ok_string">确定</string>
     <!-- App Ops Categories -->
+    <string name="app_ops_settings">权限管理</string>
+    <string name="app_ops_cat_location">位置信息服务</string>
+    <string name="app_ops_cat_personal">个人</string>
+    <string name="app_ops_cat_messaging">信息</string>
+    <string name="app_ops_cat_media">媒体</string>
+    <string name="app_ops_cat_device">设备</string>
+    <string name="app_ops_cat_bootup">启动</string>
     <!-- App ops labels -->
+    <string name="app_ops_access_camera">相机</string>
+    <string name="app_ops_coarse_location">允许使用基站的粗略位置</string>
+    <string name="app_ops_fine_location">准确位置</string>
+    <string name="app_ops_gps_location">GPS</string>
+    <string name="app_ops_access_notifications">通知</string>
+    <string name="app_ops_activate_vpn">VPN</string>
+    <string name="app_ops_auto_start">自动启动</string>
+    <string name="app_ops_delete_call_log">删除通话纪录</string>
+    <string name="app_ops_delete_contacts">删除联系人</string>
+    <string name="app_ops_delete_mms">删除彩信</string>
+    <string name="app_ops_delete_sms">删除短信</string>
+    <string name="app_ops_draw_on_top">在其他应用上层显示</string>
+    <string name="app_ops_get_usage_stats">获取使用统计信息</string>
+    <string name="app_ops_keep_device_awake">保持唤醒</string>
+    <string name="app_ops_monitor_location">允许应用监听位置数据</string>
+    <string name="app_ops_high_power_location">允许应用使用高精确度模式监听位置数据</string>
+    <string name="app_ops_make_phone_call">拨打电话</string>
+    <string name="app_ops_modify_calendar">更新日历</string>
+    <string name="app_ops_modify_call_log">更新通话记录</string>
+    <string name="app_ops_modify_clipboard">修改剪贴板</string>
+    <string name="app_ops_modify_contacts">修改通讯录信息</string>
+    <string name="app_ops_modify_settings">更新设置</string>
+    <string name="app_ops_mute_unmute_microphone">麦克静音/取消静音</string>
+    <string name="app_ops_play_audio">播放音频</string>
+    <string name="app_ops_post_notification">允许使用通知栏</string>
+    <string name="app_ops_cell_scan">蜂窝网络扫描</string>
+    <string name="app_ops_project_media">投影媒体</string>
+    <string name="app_ops_read_calendar">读取日历</string>
+    <string name="app_ops_read_call_log">读取通话记录</string>
+    <string name="app_ops_read_clipboard">读取剪贴板</string>
+    <string name="app_ops_read_contacts">读取联系人</string>
+    <string name="app_ops_read_mms">读取彩信</string>
+    <string name="app_ops_read_sms">读取短信</string>
+    <string name="app_ops_receive_sms">接收短信</string>
+    <string name="app_ops_record_audio">录制音频</string>
+    <string name="app_ops_send_mms">发送彩信</string>
+    <string name="app_ops_send_sms">发送短信</string>
+    <string name="app_ops_toast_window">toast 信息</string>
+    <string name="app_ops_use_alarm_volume">闹钟音量</string>
+    <string name="app_ops_use_audio_focus">音频焦点</string>
+    <string name="app_ops_use_bluetooth_volume">蓝牙音量</string>
+    <string name="app_ops_use_master_volume">主音量</string>
+    <string name="app_ops_use_media_buttons">媒体按键</string>
+    <string name="app_ops_use_media_volume">媒体音量</string>
+    <string name="app_ops_use_notification_volume">通知音量</string>
+    <string name="app_ops_use_ring_volume">铃声音量</string>
+    <string name="app_ops_use_vibrate">触摸反馈</string>
+    <string name="app_ops_use_voice_volume">通话音量</string>
+    <string name="app_ops_write_mms">编写彩信</string>
+    <string name="app_ops_write_sms">编写短信</string>
+    <string name="app_ops_use_fingerprint">指纹</string>
+    <string name="app_ops_add_voicemail">语音邮件</string>
+    <string name="app_ops_read_phone_state">访问手机状态</string>
+    <string name="app_ops_scan_wifi">搜寻WiFi网络</string>
+    <string name="app_ops_change_wallpaper">更改壁纸</string>
+    <string name="app_ops_assist_structure">辅助功能</string>
+    <string name="app_ops_assist_screenshot">屏幕截图</string>
+    <string name="app_ops_use_body_sensors">人体传感器</string>
+    <string name="app_ops_read_cell_broadcasts">小区广播</string>
+    <string name="app_ops_mock_location">模拟位置</string>
+    <string name="app_ops_read_external_storage">读取外置存储卡</string>
+    <string name="app_ops_write_external_storage">写入外置存储卡</string>
+    <string name="app_ops_turn_on_screen">点亮屏幕</string>
+    <string name="app_ops_get_accounts">手机帐号</string>
+    <string name="app_ops_run_in_background">在后台运行</string>
+    <string name="app_ops_accessibility_volume">辅助功能类音量</string>
+    <string name="app_ops_read_phone_numbers">读取电话号码</string>
+    <string name="app_ops_request_install_packages">安装软件包</string>
+    <string name="app_ops_picture_in_picture">画中画</string>
+    <string name="app_ops_app_start_foreground">前台启动</string>
+    <string name="app_ops_answer_phone_calls">接听电话</string>
+    <string name="app_ops_run_any_in_background">后台运行</string>
+    <string name="app_ops_change_wifi_state">更改 WiFI 状态</string>
+    <string name="app_ops_request_delete_packages">删除软件包</string>
+    <string name="app_ops_bind_accessibility_service">绑定到辅助功能</string>
+    <string name="app_ops_accept_handover">接受切换</string>
+    <string name="app_ops_manage_ipsec_tunnels">管理IP通道</string>
+    <string name="app_ops_start_foreground">前台启动</string>
+    <string name="app_ops_bluetooth_scan">蓝牙扫描</string>
+    <string name="app_ops_boot_completed">自动启动</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">链接铃声和通知的音量</string>
 </resources>

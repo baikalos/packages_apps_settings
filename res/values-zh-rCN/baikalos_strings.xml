@@ -16,5 +16,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="baikalos_version_title">贝加尔OS Pie电池节能</string>
+    <string name="baikalos_version_summary">贝加尔OS 电池节能-9.0</string>
+    <string name="baikalosextras_title">贝加尔高级设置</string>
+    <string name="baikalosextras_summary">系统自定义</string>
     <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">铃声音量渐强</string>
+    <string name="increasing_ring_min_volume_title">初始音量</string>
+    <string name="increasing_ring_ramp_up_time_title">铃声渐强时长</string>
 </resources>

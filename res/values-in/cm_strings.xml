@@ -25,8 +25,15 @@
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <!-- Double tap to sleep on status bar or lockscreen -->
     <!-- Hostname setting -->
+    <string name="device_hostname">Nama host perangkat</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Tampilkan sampul media</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Tampilkan visualisasi musik</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Cegah bangun yang tak disengaja</string>
+    <string name="proximity_wake_summary">Periksa sensor proximity sebelum membangunkan layar</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Bangun saat terisi</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Aktifkan layar saat menghubung atau memutus sumber daya</string>
 </resources>

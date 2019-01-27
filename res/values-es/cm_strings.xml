@@ -18,15 +18,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Depuración Android</string>
+    <string name="adb_enable_summary">Activar la interfaz Android Debug Bridge (ADB)</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">Notificación de depuración</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB sobre red</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Toque para dormir</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doble toque en la barra de estado o pantalla de bloqueo para apagar la pantalla</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">Nombre del dispositivo</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Mostrar portada del álbum</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Mostrar visualizador musical</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevenir encendido accidental</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Despertar al conectar</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla cuando se conecte o desconecte una fuente de energía</string>
 </resources>

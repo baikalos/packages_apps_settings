@@ -16,9 +16,37 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
+    <string name="rom_version_title">GZOSP版本</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+    <string name="sim_enabled">启用</string>
+    <string name="sim_disabled">禁用</string>
+    <string name="sim_missing">缺失或故障</string>
+    <string name="sim_enabler_need_disable_sim">SIM 卡将被禁用。是否继续？</string>
+    <string name="sim_enabler_will_disable_sim_title">警告</string>
+    <string name="sim_enabler_need_switch_data_service">此 SIM 卡将被禁用，且 SIM 卡 <xliff:g id="slotid">%1$s</xliff:g> 将被用作数据服务。您确定要继续吗？</string>
+    <string name="sim_enabler_airplane_on">飞行模式开启时无法执行该操作。</string>
+    <string name="sim_enabler_in_call">通话期间无法执行该操作。</string>
+    <string name="sim_enabler_both_inactive">无法禁用全部 SIM 卡</string>
+    <string name="sim_enabler_enabling">正在激活\U2026</string>
+    <string name="sim_enabler_disabling">正在禁用\u2026</string>
+    <string name="sub_activate_success">SIM 卡已激活</string>
+    <string name="sub_activate_failed">启用失败。</string>
+    <string name="sub_deactivate_success">SIM 卡已禁用。</string>
+    <string name="sub_deactivate_failed">禁用失败。</string>
+    <string name="available_sims_title">可用 SIM 卡</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏充电信息</string>
+    <string name="lockscreen_battery_info_summary">充电时在锁屏界面显示适配充电器的最大电流电压以及电池温度</string>
     <!-- Facelock toggle -->
+    <string name="face_auto_unlock_title">自动人脸解锁</string>
+    <string name="face_auto_unlock_summary">人脸解锁后自动解除锁屏</string>
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">滑动截屏</string>
+    <string name="three_finger_gesture_summary">三指下滑截图</string>
     <!-- OP like Navigation Gestures -->
+    <string name="gesture_settings_title">导航手势</string>
+    <string name="gesture_settings_info">必须关闭导航栏！\n\n可用手势\n\n后退\n-向左或向右滑动\n\n主页\n-上滑到中心\n\n最近打开的程序\n-向上滑到中心并长按住\n\n上一个应用\n-从中间向上短滑短并按住</string>
+    <string name="use_bottom_gesture_title">导航手势</string>
+    <string name="use_bottom_gesture_summary">使用向上滑动手势进行导航</string>
 </resources>

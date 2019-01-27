@@ -26,7 +26,12 @@
     <!-- Android debugging over network -->
     <string name="adb_over_network">ADB attraverso la rete</string>
     <string name="adb_over_network_summary">Attiva il debug TCP/IP tramite interfacce di rete (Wi-Fi, reti USB). Questa impostazione è ripristinata al riavvio</string>
+    <string name="adb_over_network_warning">ATTENZIONE: Quando ADB tramite la rete è attivato, il telefono è suscettibile di intrusioni su tutte le reti connesse! \n\nUtilizza questa funzione solo quando sei connesso su reti attendibili.\n\nAbilitare questa funzione?</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Sei a <xliff:g id="step_count">%1$d</xliff:g> passo dall\'abilitare la modalità sviluppatore.</item>
+        <item quantity="other">Sei a <xliff:g id="step_count">%1$d</xliff:g> passo dall\'abilitare la modalità sviluppatore.</item>
+    </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
     <string name="show_dev_on_cm">Hai attivato la modalità sviluppatore!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->

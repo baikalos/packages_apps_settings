@@ -17,8 +17,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabled">activado</string>
+    <string name="sim_disabled">desactivada</string>
+    <string name="sub_activate_success">SIM activada.</string>
+    <string name="sub_deactivate_success">SIM desactivada.</string>
     <!-- Lockscreen battery info indicator  -->
     <!-- Facelock toggle -->
     <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Deslizar para hacer captura de pantalla</string>
     <!-- OP like Navigation Gestures -->
+    <string name="gesture_settings_title">Gestos de Navegación</string>
+    <string name="use_bottom_gesture_title">Gestos de navegación</string>
 </resources>

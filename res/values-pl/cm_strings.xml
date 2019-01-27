@@ -18,15 +18,33 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Debugowanie</string>
+    <string name="adb_enable_summary">Włącz interfejs Android Debug Bridge (ADB)</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">Powiadomienie o debugowaniu</string>
+    <string name="adb_notify_summary">Wyświetlaj powiadomienie kiedy debugowanie USB lub przez sieć jest włączone</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">ADB przez sieć</string>
+    <string name="adb_over_network_summary">Aktywuj debugowanie TCP/IP przez interfejs sieciowy (sieci Wi\u2011Fi, USB). Ustawienie zostanie zresetowane po ponownym uruchomieniu</string>
+    <string name="adb_over_network_warning">OSTRZEŻENIE: Gdy ADB przez sieć jest włączone, twój telefon jest narażony na intruzów z wszystkich podłączonych sieci!\n\nUżywaj tej funkcji tylko wtedy, gdy korzystasz z zaufanych sieci.\n\nNa pewno chcesz włączyć tę funkcję?</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">Jesteś teraz programistą!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">Wystarczy, już jesteś programistą.</string>
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Dotknij, by uśpić</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Kliknij dwukrotnie na pasku statusu lub ekranie blokady aby wyłączyć ekran</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">Nazwa hosta urządzenia</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Wyświetlanie okładki albumu</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Wyświetlaj wizualizację muzyki</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">Zapobiegaj przypadkowemu wybudzeniu</string>
+    <string name="proximity_wake_summary">Sprawdź czujnik zbliżeniowy przed wybudzeniem ekranu</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania źródła zasilania</string>
 </resources>

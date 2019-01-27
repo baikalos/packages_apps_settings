@@ -18,6 +18,7 @@
     <!-- gzosp version -->
     <string name="rom_version_title">GZOSP versione</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> è <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_enabled">abilitato</string>
     <string name="sim_disabled">disabilitato</string>
     <string name="sim_missing">mancante o difettoso</string>
@@ -36,6 +37,7 @@
     <string name="available_sims_title">Schede SIM disponibili</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Informazioni di ricarica nella schermata di blocco</string>
+    <string name="lockscreen_battery_info_summary">Visualizzare la tensione di alimentazione massima del caricabatterie e la temperatura della batteria sulla schermata di blocco durante la ricarica</string>
     <!-- Facelock toggle -->
     <string name="face_auto_unlock_title">Sblocco automatico con volto</string>
     <string name="face_auto_unlock_summary">Sblocca automaticamente il dispositivo dopo il riconoscimento del viso</string>
@@ -43,5 +45,8 @@
     <string name="three_finger_gesture">Swipe per fare uno screenshot</string>
     <string name="three_finger_gesture_summary">Scorri con tre dita per fare uno screenshot</string>
     <!-- OP like Navigation Gestures -->
+    <string name="gesture_settings_title">Gesti per la navigazione</string>
+    <string name="gesture_settings_info">La barra di navigazione deve essere disabilitata!!\n\nGesti disponibili:!!\n\nIndietro!\n- Scorri verso l\'alto sul lato sinistro o destro\n\nHome!\n- Scorri verso il centro\n\nApp recenti\n- Scorri verso l\'alto dal centro e tieni premuto\n\nTieni premuto home\n- Scorri verso l\'alto e tieni premuto al centro</string>
+    <string name="use_bottom_gesture_title">Gesti di navigazione</string>
     <string name="use_bottom_gesture_summary">Scorri verso l\'alto dalla parte inferiore dello schermo per navigare</string>
 </resources>

@@ -18,6 +18,7 @@
     <!-- gzosp version -->
     <string name="rom_version_title">GZOSP Version</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> ist <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_enabled">aktiviert</string>
     <string name="sim_disabled">deaktiviert</string>
     <string name="sim_missing">fehlt oder fehlerhaft</string>
