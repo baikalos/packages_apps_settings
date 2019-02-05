@@ -24,8 +24,14 @@
     <string name="adb_notify">Notificación de depuración</string>
     <!-- Android debugging over network -->
     <string name="adb_over_network">ADB sobre red</string>
+    <string name="adb_over_network_warning">ADVERTENCIA: Cuando se activa ADB sobre red, ¡su teléfono está expuesto a acceso no autorizado en todas las redes conectadas!\n\nSólo use esta función conectado a redes confiables.\n\n¿Está seguro de activar esta función?</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> paso para habilitar las opciones para desarrolladores.</item>
+        <item quantity="other">Ahora estás a <xliff:g id="step_count">%1$d </xliff:g> paso para habilitar las opciones para desarrolladores.</item>
+    </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">¡Has activado las opciones para desarrolladores!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Toque para dormir</string>

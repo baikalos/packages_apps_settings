@@ -21,7 +21,11 @@
     <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
     <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente cuando se introduce el PIN o contraseña correctos</string>
     <!-- Custom light color -->
+    <string name="custom_light_title">Color del LED</string>
+    <string name="custom_light_on_time_title">Tiempo encendido durante el pulso LED (ms)</string>
+    <string name="custom_light_off_time_title">Tiempo apagado durante el pulso LED (ms)</string>
     <string name="value_equals_default">por_defecto</string>
+    <string name="show_light_on_zen_title">Parpadeo durante No Molestar</string>
     <!-- Charging vibration -->
     <string name="charging_vibro_title">Vibración al cargar</string>
     <!-- Screenshot sound -->
@@ -64,10 +68,15 @@
     <string name="app_ops_keep_device_awake">mantener activo</string>
     <string name="app_ops_make_phone_call">hacer llamadas</string>
     <string name="app_ops_modify_calendar">actualizar calendario</string>
+    <string name="app_ops_modify_call_log">actualizar registro de llamadas</string>
     <string name="app_ops_modify_clipboard">modificar portapapeles</string>
     <string name="app_ops_modify_contacts">actualizar contactos</string>
+    <string name="app_ops_modify_settings">actualizar ajustes</string>
+    <string name="app_ops_mute_unmute_microphone">silenciar/no silenciar micrófono</string>
     <string name="app_ops_play_audio">reproducir sonidos</string>
     <string name="app_ops_post_notification">mostrar notificaciones</string>
+    <string name="app_ops_cell_scan">escanear red telefónica</string>
+    <string name="app_ops_project_media">proyectar multimedia</string>
     <string name="app_ops_read_calendar">leer calendario</string>
     <string name="app_ops_read_call_log">leer registro de llamadas</string>
     <string name="app_ops_read_clipboard">leer portapapeles</string>
@@ -88,23 +97,37 @@
     <string name="app_ops_use_notification_volume">volumen de notificaciones</string>
     <string name="app_ops_use_ring_volume">volumen de llamada</string>
     <string name="app_ops_use_vibrate">respuesta háptica</string>
+    <string name="app_ops_use_voice_volume">volumen de llamada</string>
     <string name="app_ops_write_mms">escribir MMS</string>
     <string name="app_ops_write_sms">escribir SMSe</string>
     <string name="app_ops_use_fingerprint">huella digital</string>
     <string name="app_ops_add_voicemail">buzón de voz</string>
     <string name="app_ops_read_phone_state">acceder al estado del dispositivo</string>
+    <string name="app_ops_scan_wifi">Escanear redes WiFi</string>
+    <string name="app_ops_change_wallpaper">cambiar fondo de pantalla</string>
     <string name="app_ops_assist_screenshot">captura de pantalla</string>
     <string name="app_ops_use_body_sensors">sensores corporales</string>
+    <string name="app_ops_read_cell_broadcasts">transmisiones móviles</string>
+    <string name="app_ops_read_external_storage">leer alm. ext.</string>
+    <string name="app_ops_write_external_storage">escribir alm. ext.</string>
     <string name="app_ops_turn_on_screen">encender la pantalla</string>
     <string name="app_ops_get_accounts">cuentas del dispositivo</string>
     <string name="app_ops_run_in_background">ejecutar en segundo plano</string>
+    <string name="app_ops_accessibility_volume">volumen de accesibilidad</string>
     <string name="app_ops_read_phone_numbers">leer número de teléfono</string>
+    <string name="app_ops_request_install_packages">instalar paquetes</string>
     <string name="app_ops_picture_in_picture">pip</string>
+    <string name="app_ops_app_start_foreground">inicio en primer plano</string>
     <string name="app_ops_answer_phone_calls">responder llamadas</string>
     <string name="app_ops_run_any_in_background">ejecutar en segundo plano</string>
     <string name="app_ops_change_wifi_state">cambiar estado de Wi-Fi</string>
     <string name="app_ops_request_delete_packages">eliminar paquetes</string>
+    <string name="app_ops_bind_accessibility_service">unir a accesibilidad</string>
+    <string name="app_ops_accept_handover">aceptar entrega</string>
+    <string name="app_ops_manage_ipsec_tunnels">administrar túneles ip</string>
+    <string name="app_ops_start_foreground">inicio en primer plano</string>
     <string name="app_ops_bluetooth_scan">escaneo bluetooth</string>
     <string name="app_ops_boot_completed">arranque automático</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Vincular volumen de llamada y notificaciones</string>
 </resources>

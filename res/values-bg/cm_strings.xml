@@ -18,15 +18,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">Дебъгване на Android</string>
     <!-- Android debugging notification -->
     <!-- Android debugging over network -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Чукнете за заспиване</string>
     <!-- Hostname setting -->
     <!-- Lock screen cover art -->
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Показване на музикалния визуализатор</string>
     <!-- Proximity wake -->
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Събуждане при зареждане</string>
 </resources>

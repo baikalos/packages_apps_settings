@@ -16,7 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
+    <string name="rom_version_title">Версия на GZOSP</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_need_disable_sim">СИМ картата ще бъде деактивирана. Искате ли да продължите?</string>
+    <string name="sim_enabler_will_disable_sim_title">Внимание</string>
+    <string name="sim_enabler_both_inactive">Не може да изключите всички СИМ карти</string>
+    <string name="sub_deactivate_failed">Неуспешно деактивиране.</string>
+    <string name="available_sims_title">Налични СИМ карти</string>
     <!-- Lockscreen battery info indicator  -->
     <!-- Facelock toggle -->
     <!-- Three-fingers-swipe to screenshot -->

@@ -16,16 +16,37 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- gzosp version -->
+    <string name="rom_version_title">Versión GZOSP</string>
     <!-- MSIM Manual provisioning -->
+    <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> es <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
     <string name="sim_enabled">activado</string>
     <string name="sim_disabled">desactivada</string>
+    <string name="sim_missing">ausente o defectuosa</string>
+    <string name="sim_enabler_need_disable_sim">La tarjeta SIM se desactivará. ¿Quieres continuar?</string>
+    <string name="sim_enabler_will_disable_sim_title">Atención</string>
+    <string name="sim_enabler_need_switch_data_service">Esta tarjeta SIM será desactivada y la SIM <xliff:g id="slotid">%1$s </xliff:g> sera utilizada para servicios de datos. ¿Estás seguro que deseas continuar?</string>
+    <string name="sim_enabler_airplane_on">No se puede realizar la operación mientras esté activado el modo avión.</string>
+    <string name="sim_enabler_in_call">No se puede realizar la operación mientras haya una llamada en curso.</string>
+    <string name="sim_enabler_both_inactive">No es posible desactivar todas las tarjetas SIM</string>
+    <string name="sim_enabler_enabling">Activando\u2026</string>
+    <string name="sim_enabler_disabling">Desactivando\u2026</string>
     <string name="sub_activate_success">SIM activada.</string>
+    <string name="sub_activate_failed">Error al activar.</string>
     <string name="sub_deactivate_success">SIM desactivada.</string>
+    <string name="sub_deactivate_failed">Error al desactivar.</string>
+    <string name="available_sims_title">Tarjetas SIM disponibles</string>
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Información de carga en la pantalla de bloqueo</string>
+    <string name="lockscreen_battery_info_summary">Muestra el voltaje y la temperatura de la batería en la pantalla de bloqueo mientras se carga</string>
     <!-- Facelock toggle -->
+    <string name="face_auto_unlock_title">Desbloqueo facial automático</string>
+    <string name="face_auto_unlock_summary">Descartar la pantalla de bloqueo tras desbloqueo facial</string>
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Deslizar para hacer captura de pantalla</string>
+    <string name="three_finger_gesture_summary">Deslizar tres dedos para hacer captura de pantalla</string>
     <!-- OP like Navigation Gestures -->
     <string name="gesture_settings_title">Gestos de Navegación</string>
+    <string name="gesture_settings_info">La barra de navegación debe estar desactivada!\n\nGestos disponibles:\n\nBack\n- Deslizar hacia arriba en el lado izquierdo o derecho\n\nInicio\n- Deslizar hacia arriba en el centro\n\nAplicaciones recientes\n- Deslizar hacia arriba en el centro y mantener\n\nMantener pulsado inicio\n- Deslizar rápidamente desde abajo en el centro y mantener</string>
     <string name="use_bottom_gesture_title">Gestos de navegación</string>
+    <string name="use_bottom_gesture_summary">Usar gestos inferiores para navegar</string>
 </resources>
