@@ -34,6 +34,11 @@
     <string name="changelog_title">Historial de cambios</string>
     <string name="changelog_summary">Desde la última actualización</string>
     <string name="changelog_error">Imposible cargar el historial de cambios</string>
+    <string name="dashboard_conditions_title">Condiciones de panel</string>
+    <string name="summary_dashboard_conditions_enabled">Las condiciones del panel están activadas</string>
+    <string name="summary_dashboard_conditions_disabled">Las condiciones del panel están desactivadas</string>
+    <string name="dashboard_suggestions_title">Sugerencias del panel</string>
+    <string name="summary_dashboard_suggestions_enabled">Las sugerencias del panel están activadas</string>
     <string name="app_package_name_title">Paquete</string>
     <string name="app_version_title">Versión</string>
     <!-- OTA -->
