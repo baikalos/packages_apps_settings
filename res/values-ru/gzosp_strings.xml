@@ -42,7 +42,7 @@
     <string name="face_auto_unlock_title">Авторазблокировка по лицу</string>
     <string name="face_auto_unlock_summary">Автоматически убирать экран блокировки после разблокировки по лицу</string>
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Свайп для сриншота</string>
+    <string name="three_finger_gesture">Свайп для снятия скриншота</string>
     <string name="three_finger_gesture_summary">Свайп тремя пальцами для снятия скриншота</string>
     <!-- OP like Navigation Gestures -->
     <string name="gesture_settings_title">Навигационные жесты</string>
