@@ -39,6 +39,7 @@
     <string name="summary_dashboard_conditions_disabled">Las condiciones del panel están desactivadas</string>
     <string name="dashboard_suggestions_title">Sugerencias del panel</string>
     <string name="summary_dashboard_suggestions_enabled">Las sugerencias del panel están activadas</string>
+    <string name="summary_dashboard_suggestions_disabled">Las sugerencias del panel están desactivadas</string>
     <string name="app_package_name_title">Paquete</string>
     <string name="app_version_title">Versión</string>
     <!-- OTA -->
