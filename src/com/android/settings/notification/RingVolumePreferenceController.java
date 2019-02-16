@@ -104,6 +104,11 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
         return mMuteIcon;
     }
 
+
+    protected void onRingerModeUpdated(int ringerMode) {
+    }
+  
+
     private void updateRingerMode() {
         final int ringerMode = mHelper.getRingerModeInternal();
         if (mRingerMode == ringerMode) return;
@@ -133,6 +138,7 @@ public class RingVolumePreferenceController extends VolumeSeekBarPreferenceContr
             } else {
                 mPreference.showIcon(R.drawable.ic_notifications);
             }
+            onRingerModeUpdated(mRingerMode);
         }
     }
 

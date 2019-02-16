@@ -23,10 +23,15 @@ import android.text.TextUtils;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+
 public class NotificationVolumePreferenceController extends
     RingVolumePreferenceController {
 
     private static final String KEY_NOTIFICATION_VOLUME = "notification_volume";
+
+    boolean mChannelConfigurable = true;
 
     public NotificationVolumePreferenceController(Context context) {
         super(context, KEY_NOTIFICATION_VOLUME);
@@ -58,4 +63,17 @@ public class NotificationVolumePreferenceController extends
         return R.drawable.ic_notifications_off_24dp;
     }
 
+
+    @Override
+    protected void onRingerModeUpdated(int ringerMode) {
+        if( mPreference == null ) return;
+        if (ringerMode == AudioManager.RINGER_MODE_VIBRATE || 
+            ringerMode == AudioManager.RINGER_MODE_SILENT) {
+            mPreference.setEnabled(false);
+            mChannelConfigurable = false;
+        } else {
+            mPreference.setEnabled(true);
+            mChannelConfigurable = true;
+        }
+    }
 }
