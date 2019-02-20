@@ -18,15 +18,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging -->
+    <string name="adb_enable">USB 디버깅</string>
+    <string name="adb_enable_summary">안드로이드 디버그 브릿지 (ADB) 인터페이스를 사용하도록 설정</string>
     <!-- Android debugging notification -->
+    <string name="adb_notify">USB 디버깅 알림</string>
     <!-- Android debugging over network -->
+    <string name="adb_over_network">무선 네트워크로 ADB 사용</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">두드려 화면 끄기</string>
+    <string name="status_bar_double_tap_to_sleep_summary">상태 표시줄이나 잠금 화면을 두 번 두드려 화면 끄기</string>
     <!-- Hostname setting -->
+    <string name="device_hostname">장치 호스트명</string>
     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">음악 시각화 표시</string>
     <!-- Proximity wake -->
+    <string name="proximity_wake_title">실수로 화면 켜기 방지</string>
+    <string name="proximity_wake_summary">화면을 켜기 전에 근접 센서 확인</string>
     <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">전원 연결시 화면 켜짐</string>
+    <string name="wake_when_plugged_or_unplugged_summary">전원이 연결되거나 분리될 때 화면 켜기</string>
 </resources>
