@@ -28,4 +28,10 @@
     <string name="increasing_ring_min_volume_title">Start volume</string>
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
+
+    <string name="doze_charger_on_title">Show when charging</string>
+    <string name="doze_charger_on_summary">Show ambient display when charging</string>
+    <string name="doze_keep_notification_title">Keep notifications</string>
+    <string name="doze_keep_notification_summary">Keep notifications on ambient screen for 12 hours</string>
+
 </resources>
