@@ -39,6 +39,14 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
+        android:key="top_level_be"
+        android:title="@string/baikalextras_title"
+        android:summary="@string/baikalextras_summary"
+        android:icon="@drawable/ic_homepage_baikalextras"
+        android:fragment="com.android.settings.aicp.StartBe"
+        android:order="-108"/>
+
+    <Preference
         android:key="top_level_ae"
         android:title="@string/aicpextras_title"
         android:summary="@string/aicpextras_summary"

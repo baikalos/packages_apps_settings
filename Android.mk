@@ -64,6 +64,7 @@ ifneq ($(INCREMENTAL_BUILDS),)
 endif
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-aicp.xml
+LOCAL_FULL_LIBS_MANIFEST_FILES += $(LOCAL_PATH)/AndroidManifest-baikalos.xml
 
 include frameworks/base/packages/SettingsLib/common.mk
 include frameworks/base/packages/SettingsLib/search/common.mk

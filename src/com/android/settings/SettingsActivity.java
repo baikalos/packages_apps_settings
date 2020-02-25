@@ -648,6 +648,11 @@ public class SettingsActivity extends SettingsBaseActivity
                 Settings.StartAeActivity.class.getName()), aicpExtrasSupported, isAdmin)
                 || somethingChanged;
 
+        boolean baikalExtrasSupported = AicpUtils.isPackageEnabled("ru.baikalos.extras", pm);
+        somethingChanged = setTileEnabled(changedList, new ComponentName(packageName,
+                Settings.StartBeActivity.class.getName()), baikalExtrasSupported, isAdmin)
+                || somethingChanged;
+
         if (UserHandle.MU_ENABLED && !isAdmin) {
 
             // When on restricted users, disable all extra categories (but only the settings ones).
