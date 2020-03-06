@@ -86,7 +86,7 @@ public class PulseOnNewTracksPreferenceController extends
     @Override
     public int getAvailabilityStatus() {
         return getAmbientConfig().pulseOnNotificationAvailable()
-                && !PackageUtils.isDozePackageAvailable(mContext)
+                /*&& !PackageUtils.isDozePackageAvailable(mContext)*/
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
