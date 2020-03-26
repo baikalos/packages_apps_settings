@@ -75,6 +75,8 @@ import com.android.settingslib.RestrictedPreference;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
+import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
+
 public class ChooseLockGeneric extends SettingsActivity {
     public static final String CONFIRM_CREDENTIALS = "confirm_credentials";
 
@@ -816,6 +818,136 @@ public class ChooseLockGeneric extends SettingsActivity {
                 intent = getLockPatternIntent();
             }
             return intent;
+        }
+
+        private void removeAllFingerprintForUserAndFinish(final int userId,
+                RemovalTracker tracker) {
+            if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected()) {
+                if (mFingerprintManager.hasEnrolledFingerprints(userId)) {
+                    mFingerprintManager.setActiveUser(userId);
+                    // For the purposes of M and N, groupId is the same as userId.
+                    final int groupId = userId;
+                    Fingerprint finger = new Fingerprint(null, groupId, 0, 0);
+                    mFingerprintManager.remove(finger, userId,
+                            new RemovalCallback() {
+                                @Override
+                                public void onRemovalError(Fingerprint fp, int errMsgId,
+                                        CharSequence errString) {
+                                    Log.e(TAG, String.format(
+                                            "Can't remove fingerprint %d in group %d. Reason: %s",
+                                            fp.getBiometricId(), fp.getGroupId(), errString));
+                                    // TODO: need to proceed with the removal of managed profile
+                                    // fingerprints and finish() gracefully.
+                                }
+
+                                @Override
+                                public void onRemovalSucceeded(Fingerprint fp, int remaining) {
+                                    if (remaining == 0) {
+                                        removeManagedProfileFingerprintsAndFinishIfNecessary(userId,
+                                                tracker);
+                                    }
+                                }
+                            });
+                } else {
+                    // No fingerprints in this user, we may also want to delete managed profile
+                    // fingerprints
+                    removeManagedProfileFingerprintsAndFinishIfNecessary(userId, tracker);
+                }
+            } else {
+                // The removal callback will call finish, once all fingerprints are removed.
+                // We need to wait for that to occur, otherwise, the UI will still show that
+                // fingerprints exist even though they are (about to) be removed depending on
+                // the race condition.
+                tracker.onFingerprintDone();
+            }
+        }
+
+        private void removeManagedProfileFingerprintsAndFinishIfNecessary(final int parentUserId,
+                RemovalTracker tracker) {
+            if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected()) {
+                mFingerprintManager.setActiveUser(UserHandle.myUserId());
+            }
+            boolean hasChildProfile = false;
+            if (!mUserManager.getUserInfo(parentUserId).isManagedProfile()) {
+                // Current user is primary profile, remove work profile fingerprints if necessary
+                final List<UserInfo> profiles = mUserManager.getProfiles(parentUserId);
+                final int profilesSize = profiles.size();
+                for (int i = 0; i < profilesSize; i++) {
+                    final UserInfo userInfo = profiles.get(i);
+                    if (userInfo.isManagedProfile() && !mLockPatternUtils
+                            .isSeparateProfileChallengeEnabled(userInfo.id)) {
+                        removeAllFingerprintForUserAndFinish(userInfo.id, tracker);
+                        hasChildProfile = true;
+                        break;
+                    }
+                }
+            }
+            if (!hasChildProfile) {
+                tracker.onFingerprintDone();
+            }
+        }
+
+        // TODO: figure out how to eliminate duplicated code. It's a bit hard due to the async-ness
+        private void removeAllFaceForUserAndFinish(final int userId, RemovalTracker tracker) {
+            if (mFaceManager != null && mFaceManager.isHardwareDetected()) {
+                if (mFaceManager.hasEnrolledTemplates(userId)) {
+                    FaceManager.RemovalCallback removalCallback =
+                            new FaceManager.RemovalCallback() {
+                        @Override
+                        public void onRemovalError(Face face, int errMsgId, CharSequence err) {
+                            Log.e(TAG, String.format("Can't remove face %d. Reason: %s",
+                                    face.getBiometricId(), err));
+                        }
+                        @Override
+                        public void onRemovalSucceeded(Face face, int remaining) {
+                            if (remaining == 0) {
+                                removeManagedProfileFacesAndFinishIfNecessary(userId, tracker);
+                            }
+                        }
+                    };
+                    if (FaceUnlockUtils.hasMotoFaceUnlock()){
+                        final List<Face> faces = mFaceManager.getEnrolledFaces(userId);
+                        if (!faces.isEmpty()) {
+                            mFaceManager.remove(faces.get(0), userId, removalCallback);
+                        }
+                        return;
+                    }
+                    mFaceManager.setActiveUser(userId);
+                    Face face = new Face(null, 0, 0);
+                    mFaceManager.remove(face, userId, removalCallback);
+                } else {
+                    // No faces in this user, we may also want to delete managed profile faces
+                    removeManagedProfileFacesAndFinishIfNecessary(userId, tracker);
+                }
+            } else {
+                tracker.onFaceDone();
+            }
+        }
+
+        // TODO: figure out how to eliminate duplicated code. It's a bit hard due to the async-ness
+        private void removeManagedProfileFacesAndFinishIfNecessary(final int parentUserId,
+                RemovalTracker tracker) {
+            if (mFaceManager != null && mFaceManager.isHardwareDetected()) {
+                mFaceManager.setActiveUser(UserHandle.myUserId());
+            }
+            boolean hasChildProfile = false;
+            if (!mUserManager.getUserInfo(parentUserId).isManagedProfile()) {
+                // Current user is primary profile, remove work profile faces if necessary
+                final List<UserInfo> profiles = mUserManager.getProfiles(parentUserId);
+                final int profilesSize = profiles.size();
+                for (int i = 0; i < profilesSize; i++) {
+                    final UserInfo userInfo = profiles.get(i);
+                    if (userInfo.isManagedProfile() && !mLockPatternUtils
+                            .isSeparateProfileChallengeEnabled(userInfo.id)) {
+                        removeAllFaceForUserAndFinish(userInfo.id, tracker);
+                        hasChildProfile = true;
+                        break;
+                    }
+                }
+            }
+            if (!hasChildProfile) {
+                tracker.onFaceDone();
+            }
         }
 
         @Override
