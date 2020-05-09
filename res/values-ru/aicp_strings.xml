@@ -131,7 +131,7 @@
     <string name="live_display_reading_mode_title">Режим чтения</string>
     <string name="live_display_reading_mode_summary">Монохромный режим для длительного чтения</string>
     <string name="color_calibration_title">Калибровка цветов</string>
-    <string name="color_calibration_summary">Откалибровать цыета экрана</string>
+    <string name="color_calibration_summary">Откалибровать цвета экрана</string>
     <string name="color_red_title">Красный</string>
     <string name="color_green_title">Зеленый</string>
     <string name="color_blue_title">Синий</string>
