@@ -91,4 +91,57 @@
     <string name="sub_activate_failed">Ошибка активации.</string>
     <string name="sub_deactivate_success">SIM-карта отключена.</string>
     <string name="sub_deactivate_failed">Отключение не удалось.</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">Оптимизировать параметры экрана в зависимости от предпочтений</string>
+    <string name="live_display_mode">Режим экрана</string>
+    <string name="live_display_color_temperature_title">Цветовая температура</string>
+    <string name="live_display_color_temperature_summary">День: <xliff:g id="day_temperature">%1$d</xliff:g>K  Ночь: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">День</string>
+    <string name="live_display_night">Ночь</string>
+    <string name="live_display_outdoor_mode_title">На улице</string>
+    <string name="live_display_outdoor_mode_summary">Увеличить яркость и контрастность на солнце</string>
+    <string name="live_display_low_power_title">Энергоэффективный</string>
+    <string name="live_display_low_power_summary">Установить режим энергосбережения</string>
+    <string name="live_display_enhance_color_title">Расширенные цвета</string>
+    <string name="live_display_enhance_color_summary">Усилить цвета</string>
+    <string name="live_display_color_profile_title">Цветовой профиль</string>
+    <string name="live_display_color_profile_standard_title">Стандартный</string>
+    <string name="live_display_color_profile_standard_summary">Стандартные настройки цвета</string>
+    <string name="live_display_color_profile_natural_title">Нейтральный</string>
+    <string name="live_display_color_profile_natural_summary">Реалистичные настройки</string>
+    <string name="live_display_color_profile_dynamic_title">Динамический</string>
+    <string name="live_display_color_profile_dynamic_summary">Расширенный цветовой диапазон</string>
+    <string name="live_display_color_profile_cinema_title">Кино</string>
+    <string name="live_display_color_profile_cinema_summary">Настройки для видео</string>
+    <string name="live_display_color_profile_astronomy_title">Астрономический</string>
+    <string name="live_display_color_profile_astronomy_summary">Расширенный канал красного цвета для ночных наблюдений</string>
+    <string name="live_display_color_profile_photography_title">Фото</string>
+    <string name="live_display_color_profile_photography_summary">Настройки для фотографии</string>
+    <string name="live_display_color_profile_basic_title">Базовый</string>
+    <string name="live_display_color_profile_basic_summary">Настройки дисплея по умолчанию</string>
+    <string name="live_display_color_profile_adaptive_title">Адаптивный</string>
+    <string name="live_display_color_profile_adaptive_summary">Настройки адаптируются в зависимости от внешнего освещения</string>
+    <string name="live_display_color_profile_reading_title">Чтение</string>
+    <string name="live_display_color_profile_reading_summary">Теплые цвета для комфортного чтения</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">Цветовой профиль sRGB</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">Цветовой профиль DCI-P3</string>
+    <string name="live_display_reading_mode_title">Режим чтения</string>
+    <string name="live_display_reading_mode_summary">Монохромный режим для длительного чтения</string>
+    <string name="color_calibration_title">Калибровка цветов</string>
+    <string name="color_calibration_summary">Откалибровать цыета экрана</string>
+    <string name="color_red_title">Красный</string>
+    <string name="color_green_title">Зеленый</string>
+    <string name="color_blue_title">Синий</string>
+
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Настройка изображения</string>
+    <string name="picture_adjustment_summary">Настроить оттенок, насыщенность, интенсивность и контрастность</string>
+    <string name="adj_hue_title">Оттенок</string>
+    <string name="adj_saturation_title">Насыщенность</string>
+    <string name="adj_intensity_title">Интенсивность</string>
+    <string name="adj_contrast_title">Контрастность</string>
+
 </resources>
