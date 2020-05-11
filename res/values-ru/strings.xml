@@ -1348,6 +1348,8 @@
     <string name="ambient_display_category_triggers" msgid="1216640141609270011">"Когда включать экран"</string>
     <string name="doze_title" msgid="7164999188166153712">"При новых уведомлениях"</string>
     <string name="doze_summary" msgid="1047254712885464738">"Включать экран, когда приходит уведомление"</string>
+    <string name="doze_when_to_show_title" msgid="10472547128981238">Управление уведомлениями</string>
+    <string name="doze_when_to_show_summary" msgid="104725471288554838">Когда включать экран для отображения уведомлений</string>
     <string name="doze_always_on_title" msgid="3357953547262808865">"Экран всегда включен"</string>
     <string name="doze_always_on_summary" msgid="1593188198982222910">"Показывать время, значки уведомлений и другую информацию (батарея разряжается быстрее)"</string>
     <string name="title_font_size" msgid="570613010306330622">"Размер шрифта"</string>
