@@ -118,6 +118,12 @@
         settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
         android:order="-130"/>
 
+    <!-- Volume Steps -->
+    <PreferenceScreen
+            android:key="volume_steps"
+            android:title="@string/volume_steps_title"
+            android:fragment="com.android.settings.aicp.VolumeSteps" />
+
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
@@ -146,14 +152,13 @@
         android:order="-100"
         settings:keywords="@string/sound_settings"/>
 
-    <!-- Phone ringtone for Slot2 -->
+    <!-- Phone ringtone for SIM2 -->
     <com.android.settings.DefaultRingtonePreference
         android:key="ringtone2"
-        android:title="@string/ringtone2_title"
+        android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
         android:ringtoneType="ringtone"
-        settings:allowDividerAbove="false"
         android:order="-90"/>
 
     <!-- Default notification ringtone -->
