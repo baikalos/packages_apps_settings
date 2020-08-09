@@ -69,7 +69,7 @@ public class BatteryOptimizationPreferenceController extends AbstractPreferenceC
 
     @Override
     public void updateState(Preference preference) {
-        final boolean isWhitelisted = mBackend.isWhitelisted(mPackageName);
+        final boolean isWhitelisted = mPackageName != null ? mBackend.isWhitelisted(mPackageName) : false;
         preference.setSummary(isWhitelisted ? R.string.high_power_on : R.string.high_power_off);
     }
 
