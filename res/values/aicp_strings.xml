@@ -43,10 +43,10 @@
     <string name="battery_stats_reset">Reset stats</string>
     <string name="battery_stats_message">Battery history stats are going to be reset</string>
 
-    <string name="aicp_version_title">BaikalOS Experience</string>
-    <string name="aicp_version_summary">BaikalOS 10 Edition</string>
+    <string name="aicp_version_title">BaikalOS</string>
+    <string name="aicp_version_summary">BaikalOS 10</string>
     <string name="aicpextras_title">AICP Extras</string>
-    <string name="aicpextras_summary">ROM customization</string>
+    <string name="aicpextras_summary">AICP ROM customization</string>
 
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
