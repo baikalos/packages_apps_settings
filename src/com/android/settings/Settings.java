@@ -243,4 +243,7 @@ public class Settings extends SettingsActivity {
     // AICP Activities
     public static class StartAeActivity extends SettingsActivity {}
 
+    // BaikalOS Activities
+    public static class StartBeActivity extends SettingsActivity {}
+
 }

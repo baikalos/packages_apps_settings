@@ -34,6 +34,7 @@ import com.android.settings.accounts.AccountSyncSettings;
 import com.android.settings.accounts.ChooseAccountFragment;
 import com.android.settings.accounts.ManagedProfileSettings;
 import com.android.settings.aicp.StartAe;
+import com.android.settings.aicp.StartBe;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
@@ -310,6 +311,7 @@ public class SettingsGateway {
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
             StartAe.class.getName()
+            StartBe.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

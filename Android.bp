@@ -31,7 +31,7 @@ android_library {
            "AicpExtras/src/**/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.aicp.extras"],
+    aaptflags: ["--extra-packages com.aicp.extras,ru.baikalos.extras"],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
