@@ -40,6 +40,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 
+import com.android.internal.telephony.OperatorInfo;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.overlay.FeatureFactory;
@@ -185,12 +186,12 @@ public class NetworkSelectSettings extends DashboardFragment {
 
             mRequestIdManualNetworkSelect = getNewRequestId();
             mWaitingForNumberOfScanResults = MIN_NUMBER_OF_SCAN_REQUIRED;
-            final String operatorNumeric = mSelectedPreference.getOperatorNumeric();
+            final OperatorInfo operator = mSelectedPreference.getOperatorInfo();
             ThreadUtils.postOnBackgroundThread(() -> {
                 final Message msg = mHandler.obtainMessage(
                         EVENT_SET_NETWORK_SELECTION_MANUALLY_DONE);
                 msg.obj = mTelephonyManager.setNetworkSelectionModeManual(
-                        operatorNumeric, true /* persistSelection */);
+                        operator, true /* persistSelection */);
                 msg.sendToTarget();
             });
         }
@@ -223,9 +224,13 @@ public class NetworkSelectSettings extends DashboardFragment {
                     setProgressBarVisible(false);
                     getPreferenceScreen().setEnabled(true);
 
-                    mSelectedPreference.setSummary(isSucceed
-                            ? R.string.network_connected
-                            : R.string.network_could_not_connect);
+                    if (mSelectedPreference != null) {
+                        mSelectedPreference.setSummary(isSucceed
+                                ? R.string.network_connected
+                                : R.string.network_could_not_connect);
+                    } else {
+                        Log.e(TAG, "No preference to update!");
+                    }
                     break;
                 case EVENT_NETWORK_SCAN_RESULTS:
                     final List<CellInfo> results = (List<CellInfo>) msg.obj;
@@ -400,6 +405,9 @@ public class NetworkSelectSettings extends DashboardFragment {
         if (mTelephonyManager.getDataState() == mTelephonyManager.DATA_CONNECTED) {
             // Try to get the network registration states
             final ServiceState ss = mTelephonyManager.getServiceState();
+            if (ss == null) {
+                return;
+            }
             final List<NetworkRegistrationInfo> networkList =
                     ss.getNetworkRegistrationInfoListForTransportType(
                             AccessNetworkConstants.TRANSPORT_TYPE_WWAN);

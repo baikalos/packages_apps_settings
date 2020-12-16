@@ -352,6 +352,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.StartAeActivity.class.getName(),
-
+            Settings.StartBeActivity.class.getName(),
     };
 }

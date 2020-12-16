@@ -18,6 +18,10 @@ package com.android.settings;
 
 import static android.content.Intent.EXTRA_USER;
 import static android.content.Intent.EXTRA_USER_ID;
+import static android.media.MediaRoute2Info.TYPE_GROUP;
+import static android.media.MediaRoute2Info.TYPE_REMOTE_SPEAKER;
+import static android.media.MediaRoute2Info.TYPE_REMOTE_TV;
+import static android.media.MediaRoute2Info.TYPE_UNKNOWN;
 import static android.text.format.DateUtils.FORMAT_ABBREV_MONTH;
 import static android.text.format.DateUtils.FORMAT_SHOW_DATE;
 
@@ -53,6 +57,8 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.hardware.face.FaceManager;
 import android.hardware.fingerprint.FingerprintManager;
+import android.media.MediaRoute2Info;
+import android.media.MediaRouter2Manager;
 import android.net.ConnectivityManager;
 import android.net.LinkProperties;
 import android.net.Network;
@@ -140,6 +146,8 @@ public final class Utils extends com.android.settingslib.Utils {
      * Whether to show the Permissions Hub.
      */
     public static final String PROPERTY_PERMISSIONS_HUB_ENABLED = "permissions_hub_enabled";
+
+    public static final String PIN_PASSWORD_LENGTH = "lockscreen.pin_password_length";
 
     /**
      * Finds a matching activity for a preference's intent. If a matching
@@ -1136,5 +1144,57 @@ public final class Utils extends com.android.settingslib.Utils {
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         drawable.draw(canvas);
         return roundedBitmap;
+    }
+
+    /**
+     * Returns {@code true} if needed to disable media output, otherwise returns {@code false}.
+     */
+    public static boolean isMediaOutputDisabled(
+            MediaRouter2Manager router2Manager, String packageName) {
+        boolean isMediaOutputDisabled = false;
+        if (!TextUtils.isEmpty(packageName)) {
+            final List<MediaRoute2Info> infos = router2Manager.getAvailableRoutes(packageName);
+            if (infos.size() == 1) {
+                final MediaRoute2Info info = infos.get(0);
+                final int deviceType = info.getType();
+                switch (deviceType) {
+                    case TYPE_UNKNOWN:
+                    case TYPE_REMOTE_TV:
+                    case TYPE_REMOTE_SPEAKER:
+                    case TYPE_GROUP:
+                        isMediaOutputDisabled = true;
+                        break;
+                    default:
+                        isMediaOutputDisabled = false;
+                        break;
+                }
+            }
+        }
+        return isMediaOutputDisabled;
+    }
+
+    public static int getPINPasswordLength(LockPatternUtils lockPatternUtils, int userId) {
+        int pinLength = 0;
+        try {
+            pinLength = (int) lockPatternUtils.getLockSettings().getLong(PIN_PASSWORD_LENGTH, 0, userId);
+        } catch (Exception e) {
+            Log.d("getPINPasswordLength", "getLong error: " + e.getMessage());
+        }
+        if (pinLength >= 4) {
+            return pinLength;
+        }
+        return 0;
+    }
+
+    public static void savePINPasswordLength(LockPatternUtils lockPatternUtils, int length, int userId) {
+        try {
+            lockPatternUtils.getLockSettings().setLong(PIN_PASSWORD_LENGTH, (long) length, userId);
+        } catch (Exception e) {
+            Log.d("savePINPasswordLength", "saveLong error: " + e.getMessage());
+        }
+    }
+
+    public static boolean hasFeatureNfc(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_NFC);
     }
 }

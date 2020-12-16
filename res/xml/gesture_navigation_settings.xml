@@ -45,11 +45,45 @@
             settings:textEnd="@string/high_label"/>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="gesture_height_category"
+        android:persistent="false"
+        android:title="@string/gesture_height_category_title">
+
+        <com.android.settings.widget.LabeledSeekBarPreference
+            android:key="back_gesture_region"
+            android:title="@string/gesture_region"
+            android:max="3"
+            android:selectable="true"
+            settings:textStart="@string/back_height_low_label"
+            settings:textEnd="@string/back_height_high_label"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="handle_length_category"
+        android:persistent="false"
+        android:title="@string/handle_length_category_title">
+
+        <com.android.settings.widget.LabeledSeekBarPreference
+            android:key="gesture_handle_length"
+            android:title="@string/home_handle_sizer_title"
+            android:max="3"
+            android:selectable="true"
+            settings:textStart="@string/home_handle_low_label"
+            settings:textEnd="@string/home_handle_high_label"/>
+    </PreferenceCategory>
+
     <com.aicp.gear.preference.SystemSettingSwitchPreference
         android:key="back_gesture_haptic"
         android:title="@string/back_gesture_haptic_title"
         android:summary="@string/back_gesture_haptic_summary"
         android:defaultValue="false" />
+
+    <com.aicp.gear.preference.SecureSettingSwitchPreference
+        android:key="show_back_arrow_gesture"
+        android:title="@string/back_gesture_arrow_message"
+        android:summary="@string/back_gesture_arrow_summary"
+        android:defaultValue="true" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="gesture_navigation_settings_footer"
@@ -57,5 +91,11 @@
         android:selectable="false"
         settings:searchable="false"
         settings:allowDividerAbove="true"/>
-</PreferenceScreen>
 
+    <com.android.settingslib.widget.FooterPreference
+        android:key="gesture_navigation_settings_region_footer"
+        android:title="@string/back_height_message"
+        android:selectable="false"
+        settings:searchable="false"
+        settings:allowDividerAbove="false"/>
+</PreferenceScreen>
