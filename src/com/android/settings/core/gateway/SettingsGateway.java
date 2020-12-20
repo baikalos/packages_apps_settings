@@ -310,7 +310,7 @@ public class SettingsGateway {
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
-            StartAe.class.getName()
+            StartAe.class.getName(),
             StartBe.class.getName()
     };
 

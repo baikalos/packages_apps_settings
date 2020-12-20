@@ -658,9 +658,9 @@ public class SettingsActivity extends SettingsBaseActivity
                 Settings.StartAeActivity.class.getName()), aicpExtrasSupported, isAdmin)
                 || somethingChanged;
 
-        boolean baikalExtrasSupported = AicpUtils.isPackageEnabled("com.baikalos.extras", pm);
+        boolean baikalExtrasSupported = AicpUtils.isPackageEnabled("ru.baikalos.extras", pm);
         somethingChanged = setTileEnabled(changedList, new ComponentName(packageName,
-                Settings.StartAeActivity.class.getName()), baikalExtrasSupported, isAdmin)
+                Settings.StartBeActivity.class.getName()), baikalExtrasSupported, isAdmin)
                 || somethingChanged;
 
         if (UserHandle.MU_ENABLED && !isAdmin) {

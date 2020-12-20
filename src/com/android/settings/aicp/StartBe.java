@@ -24,7 +24,7 @@ public class StartBe extends SettingsPreferenceFragment {
 
     private void startBe(){
         Intent baikalExtrasIntent = new Intent();
-        baikalExtrasIntent.setClassName("com.baikalos.extras", "ru.baikalos.extras.SubSettingsActivity");
+        baikalExtrasIntent.setClassName("ru.baikalos.extras", "ru.baikalos.extras.SubSettingsActivity");
         startActivity(baikalExtrasIntent);
     }
 
