@@ -36,8 +36,13 @@ import android.app.admin.DevicePolicyManager.PasswordComplexity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.UserInfo;
+import android.hardware.face.Face;
 import android.hardware.face.FaceManager;
 import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.fingerprint.Fingerprint;
+import android.hardware.fingerprint.FingerprintManager;
+import android.hardware.fingerprint.FingerprintManager.RemovalCallback;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -74,6 +79,8 @@ import com.android.settingslib.RestrictedLockUtilsInternal;
 import com.android.settingslib.RestrictedPreference;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
+
+import java.util.List;
 
 import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
 
@@ -759,6 +766,30 @@ public class ChooseLockGeneric extends SettingsActivity {
                 boolean required, Intent unlockMethodIntent) {
             return EncryptionInterstitial.createStartIntent(context, quality, required,
                     unlockMethodIntent);
+        }
+
+        /**
+         * Keeps track of the biometric removal status. When all biometrics (including managed
+         * profiles) are removed, finishes the activity. Otherwise, it's possible the UI still
+         * shows enrolled biometrics due to the async remove.
+         */
+        private class RemovalTracker {
+            boolean mFingerprintDone;
+            boolean mFaceDone;
+
+            void onFingerprintDone() {
+                mFingerprintDone = true;
+                if (mFingerprintDone && mFaceDone) {
+                    finish();
+                }
+            }
+
+            void onFaceDone() {
+                mFaceDone = true;
+                if (mFingerprintDone && mFaceDone) {
+                    finish();
+                }
+            }
         }
 
         /**
