@@ -240,10 +240,14 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
+
     // AICP Activities
     public static class StartAeActivity extends SettingsActivity {}
 
     // BaikalOS Activities
     public static class StartBeActivity extends SettingsActivity {}
 
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }

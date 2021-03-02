@@ -38,6 +38,7 @@ import com.android.settings.aicp.StartBe;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
 import com.android.settings.applications.appinfo.DrawOverlayDetails;
@@ -161,6 +162,8 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
+
+import com.android.settings.livedisplay.LiveDisplaySettings;
 
 public class SettingsGateway {
 
@@ -310,6 +313,9 @@ public class SettingsGateway {
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
+            LiveDisplaySettings.class.getName(),
+            RunningServices.class.getName()
+
             StartAe.class.getName(),
             StartBe.class.getName()
     };
@@ -353,5 +359,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.StartAeActivity.class.getName(),
             Settings.StartBeActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName(),
     };
 }
