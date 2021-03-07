@@ -314,8 +314,7 @@ public class SettingsGateway {
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
             LiveDisplaySettings.class.getName(),
-            RunningServices.class.getName()
-
+            RunningServices.class.getName(),
             StartAe.class.getName(),
             StartBe.class.getName()
     };

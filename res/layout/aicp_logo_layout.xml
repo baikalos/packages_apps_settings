@@ -29,7 +29,7 @@
         android:layout_marginRight="36dp"
         android:paddingBottom="16dp"
         android:gravity="center"
-        android:src="@drawable/aicp_logo"
+        android:src="@drawable/baikalos_logo"
         android:tint="?android:attr/colorAccent"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"

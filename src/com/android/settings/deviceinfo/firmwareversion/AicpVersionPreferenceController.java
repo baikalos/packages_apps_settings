@@ -36,7 +36,7 @@ import com.android.settingslib.RestrictedLockUtilsInternal;
 public class AicpVersionPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "AicpVersionPreferenceController";
-    private static final String KEY_AICP_VERSION = "aicp_version";
+    private static final String KEY_AICP_VERSION = "baikal_version";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
@@ -60,7 +60,7 @@ public class AicpVersionPreferenceController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        return mContext.getString(R.string.aicp_version_summary);
+        return mContext.getString(R.string.baikal_version_summary);
     }
 
     @Override

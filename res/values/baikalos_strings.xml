@@ -19,7 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="baikal_version_title">BaikalOS</string>
-    <string name="baikal_version_summary">BaikalOS 11.0</string>
-    <string name="baikalextras_title">Baikal Extras</string>
+    <string name="baikal_version_summary">BaikalOS 11.1</string>
+    <string name="baikalextras_title">BaikalOS Extras</string>
     <string name="baikalextras_summary">ROM customization</string>
 </resources>

@@ -38,8 +38,8 @@
 
     <!-- AICP version -->
     <Preference
-        android:key="aicp_version"
-        android:title="@string/aicp_version_title"
+        android:key="baikal_version"
+        android:title="@string/baikal_version_title"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AicpVersionPreferenceController"/>
